@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Tạo danh mục mới cho quản lý gói dịch vụ -->
+        <record id="module_category_subscription" model="ir.module.category">
+            <field name="name">Subscription Services</field>
+            <field name="description">Manage subscription packages and services</field>
+            <field name="sequence">20</field>
+        </record>
+        
+        <!-- Tạo nhóm quyền Subscription Package Manager -->
+        <record id="group_subscription_package_manager" model="res.groups">
+            <field name="name">Subscription Package Manager</field>
+            <field name="category_id" ref="module_category_subscription"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+        
+        <!-- Quy tắc truy cập Patient cho Subscription Manager -->
+        <record id="rule_subscription_manager_patient_access" model="ir.rule">
+            <field name="name">Subscription Manager Patient Access</field>
+            <field name="model_id" ref="mate_hms_base.model_mate_hms_patient"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_subscription_package_manager'))]"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="0"/>
+        </record>
+        
+        <!-- Quy tắc truy cập Appointment cho Subscription Manager -->
+        <record id="rule_subscription_manager_appointment_access" model="ir.rule">
+            <field name="name">Subscription Manager Appointment Access</field>
+            <field name="model_id" ref="mate_hms.model_mate_hms_appointment"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_subscription_package_manager'))]"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="0"/>
+        </record>
+        
+        <!-- Quy tắc truy cập Subscription cho Subscription Manager -->
+        <record id="rule_subscription_manager_subscription_access" model="ir.rule">
+            <field name="name">Subscription Manager Subscription Access</field>
+            <field name="model_id" ref="mate_hms_subscriptions.model_mate_hms_subscriptions"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_subscription_package_manager'))]"/>
+            <field name="perm_read" eval="1"/>
+            <field name="perm_write" eval="1"/>
+            <field name="perm_create" eval="1"/>
+            <field name="perm_unlink" eval="1"/>
+        </record>
+
+        <!-- Cấp quyền truy cập vào menu Patients -->
+        <record model="ir.ui.menu" id="mate_hms.action_menu_patient">
+            <field name="groups_id" eval="[(4, ref('mate_hms_subscriptions.group_subscription_package_manager'))]"/>
+        </record>
+        
+        <!-- Cấp quyền truy cập vào menu Appointment -->
+        <record model="ir.ui.menu" id="mate_hms.action_main_menu_appointmnet_opd">
+            <field name="groups_id" eval="[(4, ref('mate_hms_subscriptions.group_subscription_package_manager'))]"/>
+        </record>
+        
+        <!-- Cấp quyền truy cập vào menu HMS chính -->
+        <record model="ir.ui.menu" id="mate_hms.menu_hms">
+            <field name="groups_id" eval="[(4, ref('mate_hms_subscriptions.group_subscription_package_manager'))]"/>
+        </record>
+        
+        <!-- Ẩn tất cả menu khác cho nhóm này bằng cách tạo function call -->
+        <function model="ir.ui.menu" name="hide_menus_for_subscription_manager">
+            <value eval="[]"/>
+            <value model="res.groups" eval="obj().env.ref('mate_hms_subscriptions.group_subscription_package_manager').id"/>
+        </function>
+    </data>
+</odoo>

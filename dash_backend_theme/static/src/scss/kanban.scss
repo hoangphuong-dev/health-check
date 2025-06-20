@@ -1,0 +1,58 @@
+.o_kanban_renderer {
+  --Kanban-background: white;
+}
+
+.o_kanban_view .o_control_panel .o_cp_pager.text-nowrap {
+  display: none !important;
+}
+
+.o_activity_view .o_control_panel .o_cp_pager.text-nowrap {
+  display: none !important;
+}
+
+.o_kanban_view .o_kanban_record > div,
+.o_kanban_view .o_kanban_quick_create {
+  // box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  // background-color: #fff;
+  background-clip: border-box;
+  border-color: #edf2f9;
+  border-radius: 0.5rem;
+  margin-bottom: 8px;
+  margin-right: 0px;
+}
+
+.o_kanban_view
+  .o_kanban_record.o_kanban_record_has_image_fill
+  .o_kanban_image_fill_left {
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+
+.o_kanban_view .o_kanban_record > div:hover {
+  border-color: $one__primary;
+}
+.o_kanban_view .o_kanban_quick_create .o_kanban_cancel {
+  color: white;
+}
+
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click:focus,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click:focus-within,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click_edit:focus,
+.o_kanban_view .oe_kanban_card.oe_kanban_global_click_edit:focus-within,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click:focus,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click:focus-within,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click_edit:focus,
+.o_kanban_view .o_kanban_record.oe_kanban_global_click_edit:focus-within {
+  outline: thin solid $one__primary-light !important;
+}
+
+.oe_kanban_card {
+    border-color: $one__border-light;
+    padding: 1rem !important;
+  }
+
+.oe_kanban_card .o_kanban_tags .o_tag,
+.o_kanban_view .o_kanban_record .o_field_many2manytags .o_tag,
+.o_kanban_view .o_kanban_record .o_kanban_tags .o_tag {
+  background-color: transparent !important;
+}

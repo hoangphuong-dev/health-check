@@ -1,0 +1,38 @@
+.o_kanban_dashboard.o_mate_hms_kanban .o_kanban_renderer.o_kanban_ungrouped {
+  .o_kanban_record {
+    width: 99%;
+    height: auto;
+  }
+}
+
+.o_mate_dashboard_graph>canvas {
+  height: 200px;
+}
+
+.o_mate_dashboard_graph>canvas g.nv-x.nv-axis {
+  transform: translateY(175px);
+}
+
+#mate_hms_dashboard {
+  min-width: 99%;
+  text-align: center;
+}
+
+.mate_graph_linechart {
+  display: block;
+  height: 350px;
+}
+
+.one2many_relative_layout {
+    position: relative;
+
+    .subtotal_field {
+        width: fit-content;
+        margin-left: auto;
+        font-weight: 600;
+
+        span {
+            margin-right: 5px;
+        }
+    }
+}

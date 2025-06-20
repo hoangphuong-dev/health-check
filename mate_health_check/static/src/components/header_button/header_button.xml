@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-name="hr.department.ListViewReconcile.Buttons"
+        t-inherit="web.ListView.Buttons"
+        t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="action_service">
+                Create new
+            </button>
+        </xpath>
+    </t>
+    <t t-name="mate_health_check_package.ListViewReconcile.Buttons"
+        t-inherit="web.ListView.Buttons"
+        t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="action_service">
+                Create new
+            </button>
+        </xpath>
+    </t>
+    <t t-name="mate_health_check_group_sequence.ListViewReconcile.Buttons"
+        t-inherit="web.ListView.Buttons"
+        t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="action_service">
+                Create new
+            </button>
+        </xpath>
+    </t>
+</templates>

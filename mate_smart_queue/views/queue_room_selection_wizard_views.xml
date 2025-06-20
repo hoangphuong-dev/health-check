@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_queue_room_selection_wizard_simple_form" model="ir.ui.view">
+        <field name="name">mate.queue.room.selection.wizard.simple.form</field>
+        <field name="model">mate.queue.room.selection.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Clinic Options">
+                <sheet>
+                    <!-- Hidden fields but still in form -->
+                    <group col="4" invisible="1">
+                        <field name="patient_id" colspan="2"/>
+                        <field name="service_id" colspan="2"/>
+                        <field name="current_room_id" colspan="2"/>
+                        <field name="coordination_type" colspan="2"/>
+                    </group>
+                    
+                    <!-- Room Selection Widget -->
+                    <group class="mt-0">
+                        <field name="selected_room_id"  widget="room_selection_widget" nolabel="1" required="1" options="{'no_create': True, 'no_open': True}"/>
+                    </group>
+                </sheet>
+                
+                <footer>
+                    <button string="Thoát" 
+                            class="btn-secondary" 
+                            special="cancel"/>
+                    <button string="Điều phối" 
+                            name="action_coordinate" 
+                            type="object" 
+                            class="btn-primary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

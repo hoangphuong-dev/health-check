@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="mate_patient_weight_uom" model="ir.config_parameter">
+            <field name="key">mate_hms_subscriptions.service_generation_option</field>
+            <field name="value">invoice</field>
+        </record>
+        <record id="mate_patient_weight_uom" model="ir.config_parameter">
+            <field name="key">mate_hms_subscriptions.appointment_status</field>
+            <field name="value"></field>
+        </record>
+    </data>
+</odoo>

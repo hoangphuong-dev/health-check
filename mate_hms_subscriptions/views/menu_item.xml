@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Thay đổi menu chính Subscriptions để thêm nhóm Subscription Package Manager -->
+    <menuitem id="action_main_menu_subscriptions" name="Subscriptions"
+        action="mate_hms_subscriptions_action" sequence="25"
+        groups="mate_hms.group_hms_receptionist,mate_hms.group_hms_jr_doctor,mate_hms.group_mate_hms_appointment_user,mate_hms_subscriptions.group_subscription_package_manager"
+        web_icon="mate_hms_subscriptions,static/src/img/icon.png" />
+
+    <menuitem id="menu_subscriptions" name="Subscriptions" action="mate_hms_subscriptions_action"
+        parent="action_main_menu_subscriptions" sequence="0"
+        groups="mate_hms.group_hms_receptionist,mate_hms.group_hms_jr_doctor,mate_hms.group_mate_hms_appointment_user,mate_hms_subscriptions.group_subscription_package_manager" />
+    
+    <menuitem id="menu_package" name="Package" action="mate_hms_package_action"
+        parent="action_main_menu_subscriptions" sequence="1"
+        groups="mate_hms.group_hms_receptionist,mate_hms.group_hms_jr_doctor,mate_hms.group_mate_hms_appointment_user,mate_hms_subscriptions.group_subscription_package_manager" />
+    
+    <!-- Hạn chế Configuration cho nhóm Manager -->
+    <menuitem id="menu_subscriptions_configuration" name="Configuration"
+        parent="action_main_menu_subscriptions" sequence="100"
+        groups="mate_hms_base.group_hms_manager" />
+    
+    <menuitem id="menu_subscriptions_configuration_category" name="Category" action="mate_hms_subscription_category_action"
+        parent="menu_subscriptions_configuration" sequence="1" />
+</odoo>

@@ -1,0 +1,48 @@
+<odoo>
+    <data>
+        <record id="view_patient_form_package_inherit" model="ir.ui.view">
+            <field name="name">mate_hms.patient.form.inherit</field>
+            <field name="model">mate_hms.patient</field>
+            <field name="inherit_id" ref="mate_hms_base.view_patient_form" />
+            <field name="arch" type="xml">
+                
+                <!-- Chèn một tab mới vào cuối phần tab -->
+                <xpath expr="//page[@name='hospital_info']" position="after">
+                    <page string="Packages">
+                        <field name="subscriptions_ids">
+                            <list edit="0" delete="0" create="0" no_open="1">
+                                <field name="package_id"/>
+                                <button name="action_view_package_lines"
+                                    type="object"
+                                    icon="fa-list"
+                                    string="Details" class="ms-auto btn-primary"/>
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_patient_list_package_inherit" model="ir.ui.view">
+            <field name="name">mate_hms.patient.list.inherit</field>
+            <field name="model">mate_hms.patient</field>
+            <field name="inherit_id" ref="mate_hms_base.view_patient_tree" />
+            <field name="arch" type="xml">
+                
+                <!-- Chèn một tab mới vào cuối phần tab -->
+                <xpath expr="//list" position="replace">
+                    <list string="Patient" import="false">
+                        <field name="code" optional="show"/>
+                        <field name="name"/>
+                        <field name="age" optional="show"/>
+                        <field name="gender" optional="show"/>
+                        <field name="mobile" optional="show"/>
+                        <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                        <field name="active" invisible="1"/>
+                    </list>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

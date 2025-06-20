@@ -1,0 +1,42 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mate_health_check_department_manager,department manager manager,model_hr_department,base.group_user,1,1,1,1
+access_mate_health_check_department_user,department manager user,model_hr_department,base.group_user,1,1,1,1
+
+access_mate_health_check_patient_manager,patient manager,model_his_patient,base.group_user,1,1,1,1
+access_mate_health_check_patient_user,patient user,model_his_patient,base.group_user,1,1,1,1
+
+access_mate_health_check_specialty_manager,specialty manager,model_physician_specialty,base.group_user,1,1,1,1
+access_mate_health_check_specialty_user,specialty manager user,model_physician_specialty,base.group_user,1,1,1,1
+
+access_mate_create_department_wizard,create department wizard,model_mate_create_department_wizard,base.group_user,1,1,1,1
+access_mate_create_department_line_wizard,create department line wizard,model_mate_create_department_line_wizard,base.group_user,1,1,1,1
+
+access_create_group_sequence_wizard_manager,create group sequence wizard manager,model_create_group_sequence_wizard,base.group_user,1,1,1,1
+access_create_group_sequence_wizard_user,create group sequence wizard user,model_create_group_sequence_wizard,base.group_user,1,1,1,1
+
+access_create_group_sequence_line_wizard_manager,create group sequence line wizard manager,model_create_group_sequence_line_wizard,base.group_user,1,1,1,1
+access_create_group_sequence_line_wizard_user,create group sequence line wizard user,model_create_group_sequence_line_wizard,base.group_user,1,1,1,1
+
+access_create_package_wizard_manager,create package wizard manager,model_create_package_wizard,base.group_user,1,1,1,1
+access_create_package_wizard_user,create package wizard user,model_create_package_wizard,base.group_user,1,1,1,1
+
+access_create_package_line_wizard_manager,create package line wizard manager,model_create_package_line_wizard,base.group_user,1,1,1,1
+access_create_package_line_wizard_user,create package line wizard user,model_create_package_line_wizard,base.group_user,1,1,1,1
+
+access_mate_health_check_package_manager,package manager,model_mate_health_check_package,base.group_user,1,1,1,1
+access_mate_health_check_package_user,package user,model_mate_health_check_package,base.group_user,1,1,1,1
+
+access_mate_health_check_package_line_manager,package line manager,model_mate_health_check_package_line,base.group_user,1,1,1,1
+access_mate_health_check_package_line_user,package line user,model_mate_health_check_package_line,base.group_user,1,1,1,1
+
+access_mate_health_check_customer_type_manager,customer type manager,model_mate_health_check_customer_type,base.group_user,1,1,1,1
+access_mate_health_check_customer_type_user,customer type user,model_mate_health_check_customer_type,base.group_user,1,1,1,1
+
+access_mate_health_check_service_manager,service manager,model_product_product,base.group_user,1,1,1,1
+access_mate_health_check_service_user,service user,model_product_product,base.group_user,1,1,1,1
+
+access_mate_health_check_group_manager,group manager,model_mate_health_check_group,base.group_user,1,1,1,1
+access_mate_health_check_group_user,group user,model_mate_health_check_group,base.group_user,1,1,1,1
+
+access_mate_health_check_group_sequence_manager,group sequence manager,model_mate_health_check_package_group_order,base.group_user,1,1,1,1
+access_mate_health_check_group_sequence_user,group sequence user,model_mate_health_check_package_group_order,base.group_user,1,1,1,1

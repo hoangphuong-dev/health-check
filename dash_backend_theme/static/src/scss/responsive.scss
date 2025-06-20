@@ -1,0 +1,307 @@
+@media (max-width: 575.98px) {
+    .o_action_manager:has(.o-mail-Discuss) {
+        margin-top: 10px !important;
+    }
+
+    .apps_toggle:active {
+        opacity: 0.6;
+    }
+
+    .o_control_panel {
+
+        background-color: #f9fbfd !important;
+
+        .o_control_panel_main {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .o_control_panel_container {
+            padding-right: 0 !important;
+        }
+
+        .o_control_panel_breadcrumbs {
+            margin-left: 32px;
+        }
+
+        .px-3.pt-3 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+            margin-left: -16px !important;
+            margin-right: -16px !important;
+        }
+
+        .o_cp_switch_buttons {
+            margin-left: auto !important;
+        }
+
+        .o_cp_searchview {
+            .o_searchview_dropdown_toggler.o-dropdown {
+                margin-right: 0 !important;
+
+            }
+        }
+    }
+
+    .o_form_view_container {
+        .o_control_panel {
+            .o_control_panel_main_buttons {
+                margin-right: auto !important;
+            }
+        }
+    }
+
+    .o_main_navbar {
+        width: 100% !important;
+        background-color: transparent !important;
+        .sidebar {
+            display: none !important;
+        }
+
+
+        .o_action_manager {
+            margin-left: 0px !important;
+        }
+    }
+
+    .sidebar.show {
+        display: block !important;
+        width: 100% !important;
+        padding-right: 35%;
+        z-index: 20;
+        -webkit-box-shadow: 0.725rem 0 0.725rem -0.5625rem rgba(18,38,63, 0.03);
+        box-shadow: 0.725rem 0 0.725rem -0.5625rem rgba(18,38,63, 0.03);
+        background-color: #000a;
+
+        .apps_toggle {
+            top: 20px;
+            left: 58% !important;
+            cursor: pointer;
+        }
+
+        .apps_toggle:active {
+            opacity: 0.6;
+        }
+
+        .sidebar_menu {
+            height: 78vh;
+        }
+
+        .sidebar_logo {
+            height: 78px;
+        }
+
+        .logo_img {
+            display: block !important;
+        }
+
+        .company_menu {
+            display: flex !important;
+        }
+
+        .o_menu_bottom {
+            height: 140px !important;
+            .o_user_avatar {
+                height: 44px !important;
+                margin: 0 !important;
+            }
+            small {
+                display: flex !important;
+            }
+        }
+    }
+
+    .modal.o_technical_modal.o_modal_full .modal-dialog .modal-content .modal-header {
+        background-color: $one__primary !important;
+    }
+}
+
+@media (min-width: 600px) {
+    .o_main_navbar {
+        background: transparent !important;
+        z-index: 101;
+
+        .sidebar.active {
+            min-width: 56px;
+            width: 56px;
+
+            .sidebar_logo {
+                height: 60px;
+            }
+
+            .sidebar_menu {
+                height: 76vh;
+            }
+
+            .apps_toggle {
+                top: 20px;
+                left: 24px;
+                cursor: pointer;
+            }
+
+            .apps_toggle:active {
+                opacity: 0.7;
+            }
+
+            .logo_img {
+                display: none;
+            }
+            .company_menu {
+                display: none !important;
+            }
+
+            .o_menu_bottom {
+                height: 190px !important;
+                .o_user_avatar {
+                    height: 30px !important;
+                    margin-left: 12px;
+                }
+                small {
+                    display: none !important;
+                }
+
+                .checkin_attendance {
+                    right: 8px !important;
+                    transition: 0.3s;
+                }
+            }
+        }
+
+        .sidebar.active:hover {
+            min-width: 250px;
+            -webkit-box-shadow: 0.725rem 0 0.725rem -0.5625rem rgba(18,38,63, 0.03);
+            box-shadow: 0.725rem 0 0.725rem -0.5625rem rgba(18,38,63, 0.03);
+            transition: 0.3s;
+
+            .apps_toggle {
+                top: 20px;
+                left: 230px;
+                cursor: pointer;
+            }
+
+            .sidebar_menu {
+                height: 78vh;
+            }
+            .sidebar_logo {
+                height: 120px;
+            }
+
+            .logo_img {
+                display: block !important;
+            }
+
+            .company_menu {
+                display: flex !important;
+            }
+
+            .o_menu_bottom {
+                height: 140px !important;
+                .o_user_avatar {
+                    height: 44px !important;
+                    margin: 0 !important;
+                }
+                small {
+                    display: flex !important;
+                }
+            }
+
+            .checkin_attendance {
+                position: absolute;
+                right: 30px !important;
+                z-index: 1;
+                top: 5px !important;
+            }
+        }
+
+        .checkin_attendance {
+            position: absolute;
+            right: 30px !important;
+            z-index: 1;
+            top: 5px !important;
+        }
+
+        .checkin_attendance:hover {
+            .fa-circle {
+                border: 2px solid $one__primary;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+    .o_main_navbar:has(+ .o_action_manager .editor_enable) {
+        .sidebar {
+            display: none !important;
+        }
+    }
+
+    html .o_web_client > .o_main_navbar + .o_action_manager {
+        margin-left: 250px;
+        transition: 0.3s;
+    }
+
+    html .o_web_client > .o_main_navbar + .o_action_manager:has(.editor_enable) {
+        margin-left: 0px !important;
+    }
+
+    .o_main_navbar + .o_action_manager.active {
+        margin-left: 56px !important;
+        transition: 0.3s;
+    }
+
+    .o_content {
+        margin-left: 32px;
+        margin-right: 32px;
+        margin-bottom: 30px;
+        background-color: #fff;
+    }
+
+    .o_content:not(:has(.o_form_renderer)) {
+        border-color: #edf2f9;
+        border-style: solid;
+        border-width: 1px;
+        border-bottom-left-radius: 0.7rem;
+        border-bottom-right-radius: 0.7rem;
+        box-shadow: 0 0.75rem 1.5rem rgba(18,38,63, 0.03);
+    }
+
+    .o_control_panel {
+        .o_control_panel_main {
+            padding-left: 20px;
+            padding-right: 25px;
+        }
+        .o_control_panel_container {
+            min-height: 56px;
+        }
+    }
+
+    .o_onboarding_main {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    .o-mail-Discuss {
+        margin-left: 34px;
+        margin-right: 34px;
+        box-shadow: 0 0.75rem 1.5rem rgba(var(--bs-black-rgb), 0.03);
+
+        .o-mail-Discuss-core {
+            border-right-style: solid;
+            border-right-color: #e3ebf6;
+            border-right-width: 1px;
+        }
+
+        .o-mail-Discuss-content {
+            margin-right: 8px;
+        }
+    }
+
+    @media (min-width: 1600px) {
+        .o_form_view .o_control_panel {
+            .o_control_panel_container {
+                margin-right: 8px !important;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="seq_mate_patient_evaluation" model="ir.sequence">
+            <field name="name">Mate Patient Evaluation</field>
+            <field name="code">mate_hms.patient.evaluation</field>
+            <field name="prefix">EVA</field>
+            <field name="padding">3</field>
+            <field name="mate_auto_create" eval="True" />
+            <field name="company_id" eval="False" />
+        </record>
+
+        <record id="seq_mate_patient_treaatment" model="ir.sequence">
+            <field name="name">Mate Patient Treatment</field>
+            <field name="code">mate.treatment</field>
+            <field name="prefix">CASE</field>
+            <field name="padding">3</field>
+            <field name="mate_auto_create" eval="True" />
+            <field name="company_id" eval="False" />
+        </record>
+
+        <record id="seq_mate_appointment" model="ir.sequence">
+            <field name="name">Mate Appointment</field>
+            <field name="code">mate_hms.appointment</field>
+            <field name="prefix">AP</field>
+            <field name="padding">3</field>
+            <field name="mate_auto_create" eval="True" />
+            <field name="company_id" eval="False" />
+        </record>
+
+        <record id="seq_mate_prescription_order" model="ir.sequence">
+            <field name="name">Prescription Order</field>
+            <field name="code">prescription.order</field>
+            <field name="prefix">PRO</field>
+            <field name="padding">3</field>
+            <field name="mate_auto_create" eval="True" />
+            <field name="company_id" eval="False" />
+        </record>
+
+        <record id="seq_mate_patient_procedure" model="ir.sequence">
+            <field name="name">Patient Procedure</field>
+            <field name="code">mate_hms.patient.procedure</field>
+            <field name="prefix">DP</field>
+            <field name="padding">3</field>
+            <field name="mate_auto_create" eval="True" />
+            <field name="company_id" eval="False" />
+        </record>
+
+    </data>
+</odoo>

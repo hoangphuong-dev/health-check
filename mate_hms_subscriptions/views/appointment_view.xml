@@ -1,0 +1,150 @@
+<odoo>
+    <data>
+        <record id="view_hms_appointment_form_inherit" model="ir.ui.view">
+            <field name="name">mate_hms.appointment.form.inherit</field>
+            <field name="model">mate_hms.appointment</field>
+            <field name="inherit_id" ref="mate_hms.view_hms_appointment_form" />
+            <field name="arch" type="xml">
+                <!-- Chèn một tab mới vào cuối phần tab -->
+                <xpath expr="//page[@name='consumed_products']" position="after">
+                    <page string="Packages" invisible="state=='draft'">
+                        <field name="subscriptions_ids" groups="mate_hms.group_hms_jr_doctor,mate_hms.group_mate_hms_appointment_user">
+                            <list edit="0" delete="0" create="0" no_open="1">
+                                <field name="package_id"/>
+                                <button name="action_view_package_lines"
+                                    type="object"
+                                    icon="fa-list"
+                                    string="Details" class="ms-auto btn-primary"/>
+                            </list>
+                        </field>
+                    </page>
+                </xpath>
+
+                <xpath expr="//field[@name='patient_id']"  position="before">
+                    <field name="visit_number" required='1'/>
+                </xpath>
+
+                <xpath expr="//group/field[@name='department_id']" position="replace">
+                    <field name="department_id" invisible="1"/>
+                    <field name="attachment_id" readonly='1'/>
+                </xpath>
+
+                <xpath expr="//field[@name='consumable_line_ids']" position="replace">
+                    <!-- First version: hiển thị khi state NOT in ['to_invoice', 'done'] -->
+                    <field name="custom_subscriptions_domain" invisible="1"/>
+
+                    <field name="consumable_line_ids"
+                            invisible="state in ['draft','to_invoice', 'done']"
+                            nolabel="1" colspan="4"
+                            context="{
+                                'default_patient_id': patient_id,
+                                'default_department_id': department_id,
+                                'default_physician_id': physician_id,
+                                'default_pricelist_id': pricelist_id,
+                            }"
+                            readonly="state in ['cancel','done']">
+                        <list string="Line" editable="top" class="appointment_list_view">
+                            <field name="product_id" expand="1" required="1"/>
+                            <field name="product_uom_id" required="1" groups="uom.group_uom"/>
+                            <field name="qty" required="1"/>
+                            <field name="lot_id"
+                                    context="{'acs_product_id': product_id}"
+                                    options="{'no_create': True}"
+                                    readonly="tracking=='none'"
+                                    required="tracking!='none'"
+                                    optional="hidden"/>
+                            <field name="date" required="1"/>
+                            <field name="custom_subscriptions_domain" column_invisible="1"/>
+                            <field name="tracking" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="pricelist_id" column_invisible="1"/>
+                            <field name="move_id" column_invisible="1"/>
+                            <field name="subscription_id" domain="custom_subscriptions_domain"/>
+                            <field name="physician_id" column_invisible="1"/>
+                            <field name="department_id" column_invisible="1"/>
+                            <field name="patient_id" column_invisible="1"/>
+                        </list>
+                    </field>
+        
+                    <!-- Second version: chỉ hiện khi state in ['to_invoice', 'done'] -->
+                    <field name="consumable_line_ids"
+                            invisible="state not in ['to_invoice', 'done']"
+                            nolabel="1" colspan="4"
+                            context="{
+                                'default_patient_id': patient_id,
+                                'default_department_id': department_id,
+                                'default_physician_id': physician_id,
+                                'default_pricelist_id': pricelist_id,
+                                'readonly_appointment_id': True,
+                                'readonly_patient_id': True,
+                                'groupBy': 'package_group_type',
+                                'domain_key': 'appointment_id'
+                            }"
+                            readonly="state in ['cancel','done']">
+                        <list string="Line" editable="top" edit="0" create="0" delete="0" class="appointment_list_view"  default_order="product_id ASC, qty DESC">
+                            <field name="product_id" expand="1" required="1"/>
+                            <field name="product_uom_id" required="1" groups="uom.group_uom"/>
+                            <field name="qty" required="1"/>
+                            <field name="lot_id"
+                                    context="{'acs_product_id': product_id}"
+                                    options="{'no_create': True}"
+                                    readonly="tracking=='none'"
+                                    required="tracking!='none'"
+                                    optional="hidden"/>
+                            <field name="date" required="1" width="120"/>
+                            <field name="tracking" column_invisible="1"/>
+                            <field name="product_uom_category_id" column_invisible="1"/>
+                            <field name="pricelist_id" column_invisible="1"/>
+                            <field name="package_group_type" column_invisible="1"/>
+                            <field name="move_id" column_invisible="1"/>
+                            <field name="subscription_id" column_invisible="1"/>
+                            <field name="physician_id" column_invisible="1"/>
+                            <field name="department_id" column_invisible="1"/>
+                            <field name="patient_id" column_invisible="1"/>
+                        </list>
+                    </field>
+        
+                </xpath>
+                <xpath expr="//div[@name='amount_total']" position="replace">
+                    <div></div>
+                </xpath>
+
+                <xpath expr="//field[@name='physician_id']" position="replace">
+                    <field name="physician_id" invisible="1"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="view_hms_appointment_list_inherit" model="ir.ui.view">
+            <field name="name">mate_hms.appointment.list.inherit</field>
+            <field name="model">mate_hms.appointment</field>
+            <field name="inherit_id" ref="mate_hms.view_hms_appointment_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//list" position="replace">
+                    <list import="false" decoration-info="state=='draft'" decoration-muted="state=='cancel'" decoration-danger="state=='waiting'" name="appointment_tree" js_class="upload_appointment_header_button">
+                        <field name="name"/>
+                        <field name="purpose_id" optional="hide"/>
+                        <field name="cabin_id" optional="hide"/>
+                        <field name="patient_id"/>
+                        <field name="date"/>
+                        <field name="department_id" groups="mate_hms.group_allow_multi_department" optional="hide"/>
+                        <field name="physician_id"/>
+                        <field name="responsible_id" optional="hide"/>
+                        <field name="create_uid" optional="hide"/>
+                        <field name="consultation_type" optional="show"/>
+                        <field name="activity_ids" widget="list_activity" optional="show"/>
+                        <field name="invoice_exempt" string="Invoice Exempt" optional="hide"/>
+                        <field name="state" optional="show" decoration-info="state=='draft'" decoration-muted="state=='cancel'" decoration-danger="state=='waiting'" decoration-success="state=='done'" decoration-primary="state=='in_consultation'" decoration-warning="state=='to_invoice'" decoration-it="state=='pause'" widget="badge"/>
+                        <field name="waiting_date_start" invisible="1"/>
+                        <field name="waiting_date_end" invisible="1"/>
+                        <field name="date_start" invisible="1"/>
+                        <field name="date_end" invisible="1"/>
+                        <!-- This is options to load fast. Timer read records every-time and it takes more loading time So its optional -->
+                        <field name="waiting_duration_timer" widget="AcsTimer" options="{'widget_start_field': 'waiting_date_start', 'widget_stop_field': 'waiting_date_end', 'duration_field': 'waiting_duration_timer'}" optional="hide"/>
+                        <field name="company_id" groups="base.group_multi_company" optional="hide"/>
+                    </list>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

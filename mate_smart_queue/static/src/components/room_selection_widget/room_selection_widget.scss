@@ -1,0 +1,111 @@
+.o_room_selection_widget {
+    width: 100%;
+    min-height: 200px;
+
+    .room-cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 0 auto;
+    }
+
+    .room-card {
+        position: relative;
+        border: 2px solid #EEE;
+        border-radius: 12px;
+        padding: 20px 24px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        background-color: #ffffff;
+
+        &:hover {
+            transform: translateY(-2px);
+        }
+
+        &.selected {
+            border-color: #4caf50;
+            background-color: #f1f8f4;
+
+            .selection-indicator .fa-circle {
+                color: #4caf50 !important;
+            }
+        }
+
+        .room-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .room-info {
+            flex: 1;
+
+            .room-name {
+                font-size: 1.125rem;
+                font-weight: 600;
+                color: #212529;
+                margin: 0 0 8px 0;
+            }
+
+            .room-meta,
+            .room-location {
+                font-size: 0.875rem;
+                color: #6c757d;
+                line-height: 1.5;
+
+                i {
+                    width: 16px;
+                    text-align: center;
+                    font-size: 0.875rem;
+                }
+            }
+        }
+
+        .room-actions {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .badge {
+                font-size: 0.75rem;
+                padding: 4px 12px;
+                font-weight: 500;
+                white-space: nowrap;
+
+                &.bg-info {
+                    background-color: #17a2b8 !important;
+                }
+
+                &.bg-secondary {
+                    background-color: #6f42c1 !important;
+                }
+            }
+
+            .wait-time-badge {
+                padding: 6px 12px;
+                border-radius: 20px;
+                font-weight: 600;
+                font-size: 0.875rem;
+                white-space: nowrap;
+                background-color: #e0f2f1;
+                color: #00695c;
+
+                &.wait-warning {
+                    background-color: #fff3cd;
+                    color: #856404;
+                }
+
+                &.wait-danger {
+                    background-color: #f8d7da;
+                    color: #721c24;
+                }
+            }
+
+            .selection-indicator {
+                font-size: 1.25rem;
+                margin-left: 8px;
+            }
+        }
+    }
+}

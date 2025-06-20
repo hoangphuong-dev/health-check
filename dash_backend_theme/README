@@ -1,0 +1,24 @@
+DASH BACKEND MODULE
+===================
+
+This module contain a zip file called: dash_patch_module.zip located inside dash_backend_theme folder. Inside the zip file there are list patch modules. The patch modules is used for UI patching for the following modules:
+1. Account Module
+2. Purchase Module
+3. HR Expense Module
+4. Project Module
+5. Lunch Module
+The Module Patching is required so the list of modules above can compatible with Dash Backend Theme. If you are not installing the patching module, there will be errors when accessing those five modules.
+
+USAGE:
+======
+
+1. Place the dash_backend_theme to the addons folder
+2. Locate the dash_patch_module.zip file inside dash_backend_theme folder and uncompress it.
+3. Place all of the uncrompress output folders from dash_patch_module.zip to the addons folders.
+4. Start Odoo and install dash_backend_theme
+5. If you install account module (invoicing) in Odoo then you need to install dash_backend_for_account_module
+6. If you install purchase module in Odoo then you need to install dash_backend_for_purchase_module
+7. If you install project module in Odoo then you need to install dash_backend_for_project_module
+8. If you install hr_expense module in Odoo then you need to install dash_backend_for_expense_module
+9. If you install lunch module in Odoo then you need to install dash_backend_for_lunch_module
+10. Thats it! Hope you enjoy the new Odoo UI

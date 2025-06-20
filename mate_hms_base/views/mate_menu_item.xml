@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Main Patient Menu-->
+    <menuitem id="mate_main_menu_patient" name="Patient" groups="mate_hms_base.group_hms_user"
+        sequence="20" web_icon="mate_hms_base,static/src/img/patient.png" />
+
+    <menuitem id="mate_action_main_menu_patient" name="Patient" action="mate_action_patient"
+        parent="mate_main_menu_patient" sequence="10" />
+
+    <!-- Patient Configuration Menu-->
+    <menuitem id="mate_menu_hms_patient_cofig" name="Configuration"
+        parent="mate_hms_base.mate_main_menu_patient" groups="mate_hms_base.group_hms_manager"
+        sequence="100" />
+
+    <menuitem id="mate_menu_patient_tag" name="Patient Tags"
+        action="mate_hms_base.mate_act_open_patient_tag"
+        parent="mate_hms_base.mate_menu_hms_patient_cofig" sequence="15" />
+
+    <menuitem id="mate_menu_religion" name="Religion" action="mate_hms_base.mate_act_religion_view"
+        parent="mate_hms_base.mate_menu_hms_patient_cofig" sequence="20" />
+
+    <menuitem id="menu_mate_hms_services_root" name="Services" sequence="25"  groups="mate_hms_base.group_manage_services" web_icon="mate_hms_base,static/src/img/services.png"/>
+
+    <menuitem id="menu_mate_hms_services" name="Services" parent="menu_mate_hms_services_root" action="product_template_action_services"/>
+</odoo>

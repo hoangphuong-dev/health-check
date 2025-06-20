@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_mate_hms_handle_services_appointments_form_inherit" model="ir.ui.view">
+        <field name="name">mate_hms.handle.consumed.services.form.inherit</field>
+        <field name="model">mate_hms.handle.consumed.services</field>
+        <field name="inherit_id" ref="mate_hms.view_mate_hms_handle_services_appointments_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='excel_file']" position="after">
+                <field name="visit_number" required="not context.get('create_appointment')" invisible="not context.get('create_appointment')"/>   
+                <field name="patient_id" required="not context.get('create_appointment')" invisible="not context.get('create_appointment')"/>   
+                <field name="custom_package_domain" invisible="1"/>
+                <field name="package_id" required="1" invisible="not context.get('create_appointment')" readonly="not patient_id" domain="custom_package_domain"/>
+                <field name="date" invisible="1"/>   
+                <field name="date_to" invisible="1"/> 
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

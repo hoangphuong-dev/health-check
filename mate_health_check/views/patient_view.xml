@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="mate_health_check_patient_list_view" model="ir.ui.view">
+        <field name="name">his.patient.list</field>
+        <field name="model">his.patient</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="partner_id" />
+            </list>
+        </field>
+    </record>
+
+    <record id="mate_health_check_patient_form_view" model="ir.ui.view">
+        <field name="name">his.patient.form</field>
+        <field name="model">his.patient</field>
+        <field name="arch" type="xml">
+            <form>
+                <field name="partner_id" />
+            </form>
+        </field>
+    </record>
+
+    <record id="mate_health_check_patient_action" model="ir.actions.act_window">
+        <field name="name">Patient</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">his.patient</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Click to define a new Patient.
+            </p>
+        </field>
+    </record>
+
+    <record id="action_patient_list_server" model="ir.actions.server">
+        <field name="name">Patient List</field>
+        <field name="model_id" ref="model_his_patient"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_smart_queue_view()</field>
+    </record>
+   <record id="action_queue_list_server" model="ir.actions.server">
+        <field name="name">Queue List</field>
+        <field name="model_id" ref="model_his_patient"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_queue_list_view()</field>
+    </record>
+
+</odoo>

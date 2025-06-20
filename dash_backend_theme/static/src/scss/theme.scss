@@ -1,0 +1,244 @@
+body {
+    background-color: $one__light !important;
+    font-family: $one__font;
+    padding: env(safe-area-inset-top, 20px) env(safe-area-inset-right, 20px) env(safe-area-inset-bottom, 20px) env(safe-area-inset-left, 20px);
+}
+
+.o_main_navbar .o_menu_toggle {
+    color: #000;
+}
+
+.o_main_navbar .o_menu_toggle:hover {
+    color: #000;
+}
+
+.o_home_menu {
+    background-color: #f9fbfd;
+}
+
+.o_home_menu .o_app .o_caption {
+    color: #000;
+    text-shadow: unset;
+}
+
+.breadcrumb {
+  background-color: transparent !important;
+}
+
+.o_Discuss,
+.o_setting_container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: none;
+}
+.o_widget_Discuss .o_Discuss_content {
+  border-top: none !important;
+}
+.o_DiscussSidebar,
+.settings_tab {
+  color: $one__light-font-primary;
+  background-color: #f8f9fa !important;
+  height: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.o_DiscussSidebarCategory_header {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+.o_ThreadViewTopbar {
+  height: 58px;
+}
+.o_DiscussSidebarItem {
+  padding: 0.4rem 0 !important;
+}
+.o_DiscussSidebarMailbox.o-starred-box .o_DiscussSidebarMailbox_counter {
+  background-color: $one__primary;
+  padding-top: 3px;
+}
+.o_DiscussSidebarItem_activeIndicator.o-item-active {
+  width: 0;
+  height: 0;
+  background: transparent;
+  margin-top: 0.375rem;
+  margin-right: 8px !important;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid $one__primary;
+}
+.o_DiscussSidebarItem:hover {
+  background-color: transparent !important;
+  color: $one__primary;
+}
+.o_DiscussSidebar_separator {
+  width: 95% !important;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent !important;
+}
+
+.o-mail-Discuss-headerActions button.o-isActive, .o-mail-Discuss-headerActions button:hover , .o-mail-Discuss-headerActions button.o-isActive:hover {
+  color: black !important;
+}
+
+.o-mail-Discuss-core, .o-mail-Chatter-search {
+  .o_searchview {
+    border-color: #6e84a3 !important;
+    border-top-left-radius: 0.375rem !important;
+    border-bottom-left-radius: 0.375rem !important;
+  }
+}
+
+.o_MessageList {
+  padding: 10px !important;
+}
+
+.o_Message.o-not-discussion {
+  background-color: white;
+  border-color: $one__border-light;
+}
+
+.o_Message.o_Message_active {
+  background-color: transparent !important;
+}
+.o_Message_core {
+  border-radius: 0.5rem;
+}
+
+.o_Message_content {
+  margin-top: 0.5rem;
+  color: rgb(18, 38, 63);
+}
+.o_MessageInReplyToView::before {
+  width: 2.6em;
+}
+.o_MessageInReplyToView_author {
+  line-height: 2;
+}
+.o_ThreadPreview.o-muted {
+  background-color: white;
+}
+.o_ThreadPreview.o-mobile {
+  padding-top: 0.8rem;
+}
+
+.o_ThreadView.o_Chatter_thread
+  .o_MessageList.o_ThreadView_messageList
+  .o_MessageList_item:not(:last-child)
+  .o_Message_sidebar::before {
+  border-left: 1px solid #e3ebf6;
+  content: "";
+  height: 100%;
+  left: 2rem;
+  position: absolute;
+  top: 1rem;
+}
+
+//Settings
+
+.o_setting_container .settings_tab {
+  .app_name {
+    color: $one__light-font-primary !important;
+  }
+}
+
+.o_base_settings .o_control_panel .o_panel .o_setting_search .searchInput {
+  max-width: none !important;
+  margin: 4px 0 0 10px !important;
+}
+
+.o_setting_container .settings_tab .tab {
+  height: 30px !important;
+}
+
+.o_setting_container .settings {
+  padding: 10px !important;
+}
+.o_setting_container .settings_tab .app_name {
+  color: $one__light-font-primary;
+
+  &:hover {
+    color: $one__primary !important;
+  }
+}
+.o_setting_container .settings_tab .selected {
+  background: transparent !important;
+  box-shadow: none !important;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 24%;
+    left: 0;
+    background: transparent;
+    margin-top: 0.375rem;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $one__primary;
+  }
+
+  .app_name {
+    color: $one__light-font-primary;
+
+    &:hover {
+      color: $one__primary !important;
+    }
+  }
+}
+
+.o_form_image_controls > .o_select_file_button {
+  background: $one__primary !important;
+  color: $one__light;
+}
+
+.o_search_panel .o_search_panel_category .o_search_panel_section_icon {
+  color: $one__primary;
+}
+.o_search_panel .list-group-item header.active {
+  background-color: $one__primary-light;
+  color: $one__primary;
+}
+
+//Chat
+.o_ChatWindowHeader {
+  background-color: $one__primary !important;
+  color: $one__light !important;
+  border-radius: 0px !important;
+}
+
+.dropdown-menu {
+  box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03)
+}
+
+.o_web_client .o_mobile_search .o_mobile_search_header {
+  background-color: $one__primary !important;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  background-color: transparent  !important;
+}
+
+.text-bg-primary {
+  background-color: $one__primary !important;
+}
+
+.modal-header {
+  border-bottom: 1px solid #edf2f9 !important;
+}
+
+.modal-footer {
+  border-top: 1px solid #edf2f9 !important;
+}
+
+.modal-content {
+  border-radius: 0.5rem;
+
+  .o_content {
+    margin: 0 !important;
+  }
+}
