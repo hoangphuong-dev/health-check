@@ -1,0 +1,28 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_mate_hms_package,hms package User,model_mate_hms_package,mate_hms_base.group_hms_user,1,0,0,0
+access_mate_hms_package_line,acs hms package line User,model_mate_hms_package_line,mate_hms_base.group_hms_user,1,0,0,0
+
+access_mate_hms_package_approver,hms package Approver,model_mate_hms_package,mate_hms_base.group_hms_user,1,1,1,0
+access_mate_hms_package_line_approver,package line Approver,model_mate_hms_package_line,mate_hms_base.group_hms_user,1,1,1,1
+
+access_mate_hms_package_manager,Package Manager,model_mate_hms_package,mate_hms_base.group_hms_user,1,1,1,1
+
+access_mate_hms_subscriptions_manager,Subscriptions Manager,model_mate_hms_subscriptions,mate_hms_base.group_hms_user,1,1,1,1
+access_mate_hms_subscriptions_user,Subscriptions User,model_mate_hms_subscriptions,mate_hms_base.group_hms_user,1,0,0,0
+
+access_mate_hms_subscription_line_manager,Subscription line Manager,model_mate_hms_subscription_line,mate_hms_base.group_hms_user,1,1,1,1
+access_mate_hms_subscription_line_user,Subscription line User,model_mate_hms_subscription_line,mate_hms_base.group_hms_user,1,1,1,1
+
+access_mate_hms_appointment_package_usage_user,Subscription line User,model_mate_hms_appointment_package_usage,mate_hms_base.group_hms_user,1,1,1,1
+
+access_mate_hms_subscription_category_user,Subscription category User,model_mate_hms_subscription_category,mate_hms_base.group_hms_user,1,1,1,1
+
+access_mate_hms_subscription_update_history_user,Subscription Update History User,model_mate_hms_subscription_update_history,mate_hms_base.group_hms_user,1,1,1,1
+access_mate_hms_subscription_update_history_line_user,Subscription Update History Line User,model_mate_hms_subscription_update_history_line,mate_hms_base.group_hms_user,1,1,1,1
+
+
+access_mate_hms_subscriptions_handle_upload_package_manager, Access Handle Upload Package Services Manager,model_mate_hms_subscriptions_handle_upload_package,mate_hms_base.group_hms_user,1,1,1,1
+access_mate_hms_subscriptions_handle_upload_package_user, Access Handle Upload Package Services User,model_mate_hms_subscriptions_handle_upload_package,mate_hms_base.group_hms_user,1,1,1,0
+
+access_mate_hms_handle_package_line_manager, Access Handle Upload Package Line Manager,model_mate_hms_handle_package_line,mate_hms_base.group_hms_user,1,1,1,1
+access_mate_hms_handle_package_line_user, Access Handle Upload Package Line User,model_mate_hms_handle_package_line,mate_hms_base.group_hms_user,1,1,1,0

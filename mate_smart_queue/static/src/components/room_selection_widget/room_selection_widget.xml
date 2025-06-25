@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="mate_smart_queue.RoomSelectionWidget">
+        <div class="o_room_selection_widget">
+            <!-- Loading state -->
+            <div t-if="state.isLoading" class="text-center p-3">
+                <i class="fa fa-spinner fa-spin fa-2x text-primary"/>
+                <p class="mt-2 text-muted">Đang tải danh sách phòng...</p>
+            </div>
+            
+            <!-- Room cards container -->
+            <div t-else="" class="room-cards-container">
+                <!-- Empty state -->
+                <div t-if="!state.rooms.length" class="alert alert-info">
+                    <i class="fa fa-info-circle me-2"/>
+                    Không có phòng khả dụng cho dịch vụ này.
+                </div>
+                
+                <!-- Room cards -->
+                <t t-foreach="state.rooms" t-as="room" t-key="room.id">
+                    <div t-att-class="getRoomClasses(room)"
+                         t-on-click="(event) => this.selectRoom(room.id)">
+                        
+                        <!-- Room content -->
+                        <div class="room-content">
+                            <!-- Left section: Room info -->
+                            <div class="room-info">
+                                <h4 class="room-name mb-2" t-esc="room.name"/>
+                                <div class="room-meta mb-1">
+                                    <i class="fa fa-users text-muted me-1"/>
+                                    <span t-esc="room.waiting_count"/> người
+                                </div>
+                                <div class="room-location">
+                                    <i class="fa fa-map-marker text-muted me-1"/>
+                                    <span t-esc="room.location"/>
+                                </div>
+                            </div>
+                            
+                            <!-- Right section: Status badge and selection -->
+                            <div class="room-actions">
+                                <t>
+                                    <span class="badge rounded-pill bg-info"
+                                          t-esc="roomCurrent(room)"/>
+                                </t>
+                                
+                                <t><span class="badge rounded-pill" t-esc="getServiceRoom()"/></t>
+                                
+                                <!-- Wait time -->
+                                <div t-att-class="`wait-time-badge wait-${room.wait_color}`">
+                                    <span t-esc="room.wait_time_text"/>
+                                </div>
+                                
+                                <!-- Selection indicator -->
+                                <div class="selection-indicator">
+                                    <i t-if="room.id === state.selectedRoomId" 
+                                       class="fa fa-circle text-primary"/>
+                                    <i t-else="" class="fa fa-circle-o text-muted"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </t>
+</templates>

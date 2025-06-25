@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <div t-inherit="mail.ActivityRenderer" class="o_activity_view h-100" t-inherit-mode="extension">
+
+        <xpath expr="//table" position="after">
+            <div t-if="pagerProps and pagerProps.total > 0" class="o_dash_paging mt-auto text-nowrap " role="search">
+                <DashPager t-props="pagerProps" />
+            </div>
+        </xpath>
+    </div>
+</templates>

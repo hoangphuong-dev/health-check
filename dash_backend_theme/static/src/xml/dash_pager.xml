@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="dash.Pager">
+        <nav class="dash_pager d-flex justify-content-between gap-2 h-100" aria-label="Pager">
+            <span />
+            <span class="o_pager_counter align-self-center" t-on-click.stop="">
+                <t t-if="state.isEditing">
+                    <input type="text" class="o_pager_value o_input d-inline-block w-auto text-end mb-n1" size="7" t-ref="autofocus" t-att-value="value" t-on-blur="onInputBlur" t-on-change="onInputChange" t-on-keydown.stop="onInputKeydown" />
+                </t>
+                <t t-else="">
+                    <span class="o_pager_value d-inline-block border-bottom border-transparent mb-n1" t-esc="value" t-on-click="onValueClick" />
+                </t>
+                <span class="ms-1"> Total Rows: </span>
+                <t t-if="props.updateTotal">
+                    <span class="fw-bold o_pager_limit o_pager_limit_fetch" t-att-class="{ 'disabled': state.isDisabled }" t-on-click.stop="updateTotal"><t t-esc="props.total"/>+</span>
+                </t>
+                <t t-else="">
+                    <span class="fw-bold o_pager_limit" t-esc="props.total"/>
+                </t>
+                <t t-if="props.total > 1">
+                    <span> items </span>
+                </t>
+                <t t-else="">
+                    <span> item </span>
+                </t>
+            </span>
+            <div class="d-flex gap-2">
+                <span class="btn-group d-print-none" aria-atomic="true">
+                    <button type="button" class="btn btn-outline-secondary o_pager_previous px-2 rounded-start" aria-label="Previous" data-tooltip="Previous" tabindex="-1" t-att-data-hotkey="props.withAccessKey ? 'p' : false" t-att-disabled="state.isDisabled or isSinglePage" t-on-click.stop="() => this.navigate(-1)">
+                        <i class="fa fa-arrow-left me-1"></i>
+                        Prev
+                    </button>
+                </span>
+                <span class="btn-group d-print-none" aria-atomic="true">
+                    <button type="button" class="btn btn-outline-secondary o_pager_next px-2 rounded-end" aria-label="Next" data-tooltip="Next" tabindex="-1" t-att-data-hotkey="props.withAccessKey ? 'n' : false" t-att-disabled="state.isDisabled or isSinglePage" t-on-click.stop="() => this.navigate(1)">
+                        Next
+                        <i class="fa fa-arrow-right ms-1"></i>
+                    </button>
+                </span>
+            </div>
+        </nav>
+    </t>
+
+</templates>

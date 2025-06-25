@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="mate.queue.token.coordination.kanban.Buttons"
+        t-inherit="web.KanbanView.Buttons"
+        t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_cp_buttons')]" position="inside">
+            <button class="btn btn-secondary" t-on-click="action_view_coordination_history">
+                <i class="fa fa-history"/> Lịch sử điều phối
+            </button>
+        </xpath>
+    </t>
+</templates>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Demo Specialties -->
+        <record id="specialty_registration" model="physician.specialty">
+            <field name="name">Đăng ký và tiếp nhận</field>
+        </record>
+
+        <record id="specialty_vitals" model="physician.specialty">
+            <field name="name">Dấu hiệu sinh tồn</field>
+        </record>
+
+        <record id="specialty_laboratory" model="physician.specialty">
+            <field name="name">Xét nghiệm</field>
+        </record>
+
+        <record id="specialty_radiology" model="physician.specialty">
+            <field name="name">Chẩn đoán hình ảnh</field>
+        </record>
+
+        <record id="specialty_ultrasound" model="physician.specialty">
+            <field name="name">Siêu âm</field>
+        </record>
+
+        <record id="specialty_ophthalmology" model="physician.specialty">
+            <field name="name">Chuyên khoa Mắt</field>
+        </record>
+
+        <record id="specialty_ent" model="physician.specialty">
+            <field name="name">Chuyên khoa Tai Mũi Họng</field>
+        </record>
+
+        <record id="specialty_dermatology" model="physician.specialty">
+            <field name="name">Chuyên khoa Da liễu</field>
+        </record>
+
+        <record id="specialty_internal" model="physician.specialty">
+            <field name="name">Nội tổng quát</field>
+        </record>
+
+        <record id="specialty_pharmacy" model="physician.specialty">
+            <field name="name">Phát thuốc</field>
+        </record>
+
+        <!-- Demo Customer Types -->
+        <record id="customer_type_individual" model="mate.health.check.customer.type">
+            <field name="name">Cá nhân</field>
+        </record>
+
+        <record id="customer_type_corporate" model="mate.health.check.customer.type">
+            <field name="name">Doanh nghiệp</field>
+        </record>
+
+        <record id="customer_type_insurance" model="mate.health.check.customer.type">
+            <field name="name">Bảo hiểm</field>
+        </record>
+
+        <!-- Demo Services -->
+        <record id="service_registration" model="product.product">
+            <field name="name">Đăng ký khám</field>
+            <field name="description">Tiếp nhận và đăng ký thông tin bệnh nhân</field>
+        </record>
+
+        <record id="service_vital_signs" model="product.product">
+            <field name="name">Đo dấu hiệu sinh tồn</field>
+            <field name="description">Đo chiều cao, cân nặng, huyết áp, mạch, nhiệt độ</field>
+        </record>
+
+        <record id="service_blood_test" model="product.product">
+            <field name="name">Xét nghiệm máu tổng quát</field>
+            <field name="description">Xét nghiệm máu cơ bản</field>
+        </record>
+
+        <record id="service_urine_test" model="product.product">
+            <field name="name">Xét nghiệm nước tiểu</field>
+            <field name="description">Xét nghiệm nước tiểu tổng quát</field>
+        </record>
+
+        <record id="service_xray_chest" model="product.product">
+            <field name="name">X-quang ngực thẳng</field>
+            <field name="description">Chụp X-quang phổi thẳng</field>
+        </record>
+
+        <record id="service_ultrasound_abdomen" model="product.product">
+            <field name="name">Siêu âm bụng tổng quát</field>
+            <field name="description">Siêu âm gan, thận, túi mật</field>
+        </record>
+
+        <record id="service_eye_exam" model="product.product">
+            <field name="name">Khám mắt</field>
+            <field name="description">Khám tổng quát mắt và thị lực</field>
+        </record>
+
+        <record id="service_ent_exam" model="product.product">
+            <field name="name">Khám Tai Mũi Họng</field>
+            <field name="description">Khám tổng quát tai, mũi, họng</field>
+        </record>
+
+        <record id="service_dermatology_exam" model="product.product">
+            <field name="name">Khám Da liễu</field>
+            <field name="description">Khám da tổng quát</field>
+        </record>
+
+        <record id="service_internal_exam" model="product.product">
+            <field name="name">Khám Nội tổng quát</field>
+            <field name="description">Khám lâm sàng nội khoa</field>
+        </record>
+
+        <record id="service_pharmacy" model="product.product">
+            <field name="name">Phát thuốc và tư vấn</field>
+            <field name="description">Phát thuốc theo đơn và tư vấn sử dụng</field>
+        </record>
+
+        <!-- Demo Groups -->
+        <record id="group_registration" model="mate.health.check.group">
+            <field name="name">Đăng ký và Đo sinh hiệu</field>
+            <field name="description">Nhóm dịch vụ đầu tiên</field>
+        </record>
+
+        <record id="group_laboratory" model="mate.health.check.group">
+            <field name="name">Xét nghiệm</field>
+            <field name="description">Các dịch vụ xét nghiệm</field>
+        </record>
+
+        <record id="group_imaging" model="mate.health.check.group">
+            <field name="name">Chẩn đoán hình ảnh</field>
+            <field name="description">X-quang và siêu âm</field>
+        </record>
+
+        <record id="group_specialty_basic" model="mate.health.check.group">
+            <field name="name">Chuyên khoa cơ bản</field>
+            <field name="description">Mắt, Tai mũi họng, Da liễu</field>
+        </record>
+
+        <record id="group_consultation" model="mate.health.check.group">
+            <field name="name">Khám và kết luận</field>
+            <field name="description">Khám nội tổng quát và kết luận</field>
+        </record>
+
+        <record id="group_pharmacy" model="mate.health.check.group">
+            <field name="name">Phát thuốc</field>
+            <field name="description">Phát thuốc và tư vấn</field>
+        </record>
+
+        <!-- Demo Departments -->
+        <record id="department_registration_01" model="hr.department">
+            <field name="name">Phòng tiếp nhận 01</field>
+            <field name="location">Tầng 1, Phòng 101</field>
+            <field name="capacity">20</field>
+            <field name="specialty_id" ref="specialty_registration"/>
+            <field name="code">REG01</field>
+        </record>
+
+        <record id="department_registration_02" model="hr.department">
+            <field name="name">Phòng tiếp nhận 02</field>
+            <field name="location">Tầng 1, Phòng 102</field>
+            <field name="capacity">20</field>
+            <field name="specialty_id" ref="specialty_registration"/>
+            <field name="code">REG02</field>
+        </record>
+
+        <record id="department_vitals_01" model="hr.department">
+            <field name="name">Phòng đo sinh hiệu 01</field>
+            <field name="location">Tầng 1, Phòng 103</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_vitals"/>
+            <field name="code">VITAL01</field>
+        </record>
+
+        <record id="department_vitals_02" model="hr.department">
+            <field name="name">Phòng đo sinh hiệu 02</field>
+            <field name="location">Tầng 1, Phòng 104</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_vitals"/>
+            <field name="code">VITAL02</field>
+        </record>
+
+        <record id="department_laboratory_01" model="hr.department">
+            <field name="name">Phòng xét nghiệm 01</field>
+            <field name="location">Tầng 2, Phòng 201</field>
+            <field name="capacity">30</field>
+            <field name="specialty_id" ref="specialty_laboratory"/>
+            <field name="code">LAB01</field>
+        </record>
+
+        <record id="department_laboratory_02" model="hr.department">
+            <field name="name">Phòng xét nghiệm 02</field>
+            <field name="location">Tầng 2, Phòng 202</field>
+            <field name="capacity">30</field>
+            <field name="specialty_id" ref="specialty_laboratory"/>
+            <field name="code">LAB02</field>
+        </record>
+
+        <record id="department_xray_01" model="hr.department">
+            <field name="name">Phòng X-quang 01</field>
+            <field name="location">Tầng 2, Phòng 203</field>
+            <field name="capacity">25</field>
+            <field name="specialty_id" ref="specialty_radiology"/>
+            <field name="code">XRAY01</field>
+        </record>
+
+        <record id="department_xray_02" model="hr.department">
+            <field name="name">Phòng X-quang 02</field>
+            <field name="location">Tầng 2, Phòng 204</field>
+            <field name="capacity">25</field>
+            <field name="specialty_id" ref="specialty_radiology"/>
+            <field name="code">XRAY02</field>
+        </record>
+
+        <record id="department_ultrasound_01" model="hr.department">
+            <field name="name">Phòng siêu âm 01</field>
+            <field name="location">Tầng 2, Phòng 205</field>
+            <field name="capacity">20</field>
+            <field name="specialty_id" ref="specialty_ultrasound"/>
+            <field name="code">UTR01</field>
+        </record>
+
+        <record id="department_ultrasound_02" model="hr.department">
+            <field name="name">Phòng siêu âm 02</field>
+            <field name="location">Tầng 2, Phòng 206</field>
+            <field name="capacity">20</field>
+            <field name="specialty_id" ref="specialty_ultrasound"/>
+            <field name="code">UTR02</field>
+        </record>
+
+        <record id="department_ophthalmology_01" model="hr.department">
+            <field name="name">Phòng khám mắt 01</field>
+            <field name="location">Tầng 3, Phòng 301</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_ophthalmology"/>
+            <field name="code">EYE01</field>
+        </record>
+
+        <record id="department_ophthalmology_02" model="hr.department">
+            <field name="name">Phòng khám mắt 02</field>
+            <field name="location">Tầng 3, Phòng 302</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_ophthalmology"/>
+            <field name="code">EYE02</field>
+        </record>
+
+        <record id="department_ent_01" model="hr.department">
+            <field name="name">Phòng khám TMH 01</field>
+            <field name="location">Tầng 3, Phòng 303</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_ent"/>
+            <field name="code">ENT01</field>
+        </record>
+
+        <record id="department_ent_02" model="hr.department">
+            <field name="name">Phòng khám TMH 02</field>
+            <field name="location">Tầng 3, Phòng 304</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_ent"/>
+            <field name="code">ENT02</field>
+        </record>
+
+        <record id="department_dermatology_01" model="hr.department">
+            <field name="name">Phòng Da liễu 01</field>
+            <field name="location">Tầng 3, Phòng 305</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_dermatology"/>
+            <field name="code">SKIN01</field>
+        </record>
+
+        <record id="department_dermatology_02" model="hr.department">
+            <field name="name">Phòng Da liễu 02</field>
+            <field name="location">Tầng 3, Phòng 306</field>
+            <field name="capacity">15</field>
+            <field name="specialty_id" ref="specialty_dermatology"/>
+            <field name="code">SKIN02</field>
+        </record>
+
+        <record id="department_internal_01" model="hr.department">
+            <field name="name">Phòng khám Nội 01</field>
+            <field name="location">Tầng 4, Phòng 401</field>
+            <field name="capacity">12</field>
+            <field name="specialty_id" ref="specialty_internal"/>
+            <field name="code">DOC01</field>
+        </record>
+
+        <record id="department_internal_02" model="hr.department">
+            <field name="name">Phòng khám Nội 02</field>
+            <field name="location">Tầng 4, Phòng 402</field>
+            <field name="capacity">12</field>
+            <field name="specialty_id" ref="specialty_internal"/>
+            <field name="code">DOC02</field>
+        </record>
+
+        <record id="department_pharmacy_01" model="hr.department">
+            <field name="name">Phòng phát thuốc</field>
+            <field name="location">Tầng 1, Phòng 105</field>
+            <field name="capacity">40</field>
+            <field name="specialty_id" ref="specialty_pharmacy"/>
+            <field name="code">PHARM01</field>
+        </record>
+
+        <!-- Demo Packages -->
+        <record id="package_basic" model="mate.health.check.package">
+            <field name="name">Gói khám cơ bản</field>
+            <field name="gender">other</field>
+            <field name="customer_type" ref="customer_type_individual"/>
+        </record>
+
+        <record id="package_standard" model="mate.health.check.package">
+            <field name="name">Gói khám tiêu chuẩn</field>
+            <field name="gender">other</field>
+            <field name="customer_type" ref="customer_type_individual"/>
+        </record>
+
+        <record id="package_premium" model="mate.health.check.package">
+            <field name="name">Gói khám cao cấp</field>
+            <field name="gender">other</field>
+            <field name="customer_type" ref="customer_type_individual"/>
+        </record>
+
+        <record id="package_corporate_standard" model="mate.health.check.package">
+            <field name="name">Gói khám doanh nghiệp tiêu chuẩn</field>
+            <field name="gender">other</field>
+            <field name="customer_type" ref="customer_type_corporate"/>
+        </record>
+
+        <!-- Demo Package Lines cho gói cơ bản -->
+        <record id="package_line_basic_registration" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_basic"/>
+            <field name="group_id" ref="group_registration"/>
+            <field name="specialty_id" ref="specialty_registration"/>
+            <field name="service_id" ref="service_registration"/>
+            <field name="department_id" ref="department_registration_01"/>
+        </record>
+
+        <record id="package_line_basic_vitals" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_basic"/>
+            <field name="group_id" ref="group_registration"/>
+            <field name="specialty_id" ref="specialty_vitals"/>
+            <field name="service_id" ref="service_vital_signs"/>
+            <field name="department_id" ref="department_vitals_01"/>
+        </record>
+
+        <record id="package_line_basic_blood" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_basic"/>
+            <field name="group_id" ref="group_laboratory"/>
+            <field name="specialty_id" ref="specialty_laboratory"/>
+            <field name="service_id" ref="service_blood_test"/>
+            <field name="department_id" ref="department_laboratory_01"/>
+        </record>
+
+        <record id="package_line_basic_xray" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_basic"/>
+            <field name="group_id" ref="group_imaging"/>
+            <field name="specialty_id" ref="specialty_radiology"/>
+            <field name="service_id" ref="service_xray_chest"/>
+            <field name="department_id" ref="department_xray_01"/>
+        </record>
+
+        <record id="package_line_basic_internal" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_basic"/>
+            <field name="group_id" ref="group_consultation"/>
+            <field name="specialty_id" ref="specialty_internal"/>
+            <field name="service_id" ref="service_internal_exam"/>
+            <field name="department_id" ref="department_internal_01"/>
+        </record>
+
+        <!-- Demo Package Lines cho gói tiêu chuẩn (kế thừa từ cơ bản + thêm) -->
+        <record id="package_line_standard_registration" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_registration"/>
+            <field name="specialty_id" ref="specialty_registration"/>
+            <field name="service_id" ref="service_registration"/>
+            <field name="department_id" ref="department_registration_01"/>
+        </record>
+
+        <record id="package_line_standard_vitals" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_registration"/>
+            <field name="specialty_id" ref="specialty_vitals"/>
+            <field name="service_id" ref="service_vital_signs"/>
+            <field name="department_id" ref="department_vitals_01"/>
+        </record>
+
+        <record id="package_line_standard_blood" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_laboratory"/>
+            <field name="specialty_id" ref="specialty_laboratory"/>
+            <field name="service_id" ref="service_blood_test"/>
+            <field name="department_id" ref="department_laboratory_01"/>
+        </record>
+
+        <record id="package_line_standard_urine" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_laboratory"/>
+            <field name="specialty_id" ref="specialty_laboratory"/>
+            <field name="service_id" ref="service_urine_test"/>
+            <field name="department_id" ref="department_laboratory_01"/>
+        </record>
+
+        <record id="package_line_standard_xray" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_imaging"/>
+            <field name="specialty_id" ref="specialty_radiology"/>
+            <field name="service_id" ref="service_xray_chest"/>
+            <field name="department_id" ref="department_xray_01"/>
+        </record>
+
+        <record id="package_line_standard_ultrasound" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_imaging"/>
+            <field name="specialty_id" ref="specialty_ultrasound"/>
+            <field name="service_id" ref="service_ultrasound_abdomen"/>
+            <field name="department_id" ref="department_ultrasound_01"/>
+        </record>
+
+        <record id="package_line_standard_eye" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_specialty_basic"/>
+            <field name="specialty_id" ref="specialty_ophthalmology"/>
+            <field name="service_id" ref="service_eye_exam"/>
+            <field name="department_id" ref="department_ophthalmology_01"/>
+        </record>
+
+        <record id="package_line_standard_internal" model="mate.health.check.package.line">
+            <field name="package_id" ref="package_standard"/>
+            <field name="group_id" ref="group_consultation"/>
+            <field name="specialty_id" ref="specialty_internal"/>
+            <field name="service_id" ref="service_internal_exam"/>
+            <field name="department_id" ref="department_internal_01"/>
+        </record>
+
+        <!-- Demo Group Sequences cho gói cơ bản -->
+        <record id="group_sequence_basic_1" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_basic"/>
+            <field name="sequence">1</field>
+            <field name="group_id" ref="group_registration"/>
+        </record>
+
+        <record id="group_sequence_basic_2" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_basic"/>
+            <field name="sequence">2</field>
+            <field name="group_id" ref="group_laboratory"/>
+        </record>
+
+        <record id="group_sequence_basic_3" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_basic"/>
+            <field name="sequence">3</field>
+            <field name="group_id" ref="group_imaging"/>
+        </record>
+
+        <record id="group_sequence_basic_4" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_basic"/>
+            <field name="sequence">4</field>
+            <field name="group_id" ref="group_consultation"/>
+        </record>
+
+        <!-- Demo Group Sequences cho gói tiêu chuẩn -->
+        <record id="group_sequence_standard_1" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_standard"/>
+            <field name="sequence">1</field>
+            <field name="group_id" ref="group_registration"/>
+        </record>
+
+        <record id="group_sequence_standard_2" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_standard"/>
+            <field name="sequence">2</field>
+            <field name="group_id" ref="group_laboratory"/>
+        </record>
+
+        <record id="group_sequence_standard_3" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_standard"/>
+            <field name="sequence">3</field>
+            <field name="group_id" ref="group_imaging"/>
+        </record>
+
+        <record id="group_sequence_standard_4" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_standard"/>
+            <field name="sequence">4</field>
+            <field name="group_id" ref="group_specialty_basic"/>
+        </record>
+
+        <record id="group_sequence_standard_5" model="mate.health.check.package.group.order">
+            <field name="package_id" ref="package_standard"/>
+            <field name="sequence">5</field>
+            <field name="group_id" ref="group_consultation"/>
+        </record>
+
+    </data>
+</odoo>

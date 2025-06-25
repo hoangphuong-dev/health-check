@@ -1,0 +1,306 @@
+.custom-control.custom-checkbox {
+  margin-top: -2px;
+}
+
+.custom-control.custom-checkbox .custom-control-input:not(:checked):not(:indeterminate)~.custom-control-label::before {
+  background-color: #e3ebf6;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: transparent;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 5px;
+}
+
+.custom-checkbox .custom-control-label::before {
+  border-radius: 5px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  color: $one__light;
+  background-color: $one__primary;
+  border: transparent;
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23FFFFFF' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  width: 1.2em;
+  height: 1.2em;
+}
+
+.custom-control-input.o_radio_input:checked~.custom-control-label::before {
+  width: 1em;
+  height: 1em;
+}
+
+textarea.o_input {
+  padding: 10px !important;
+}
+
+.o_input {
+  border-radius: 10px;
+  border: 1px solid #E1E1E1;
+  background: #FFF;
+  color: #686868;
+  font-size: 14px;
+  font-style: normal;
+  padding: 0px 10px !important;
+  font-weight: 500;
+  line-height: 16px;
+  /* 114.286% */
+  letter-spacing: 0.6px;
+  height: 36px;
+}
+
+.o_input:hover {
+  border-color: $one__primary !important;
+}
+
+.o_input:focus {
+  background-color: #fff;
+  border-color: $one__primary !important;
+  box-shadow: none;
+  color: #12263f;
+  outline: 0;
+}
+
+.o_input::placeholder {
+  color: #b1c2d9;
+  opacity: 1;
+}
+
+.text-nowrap.d-inline-flex {
+
+  input.o_input {
+    border-left: none !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+  }
+}
+
+
+.o_field_widget.o_field_many2many_tags .o_tags_input {
+  padding: 4px 0 !important;
+
+}
+
+.o_field_widget.o_field_many2many_tags .o_field_many2many_selection .o_input {
+  padding: 2px 5px !important;
+}
+
+.form-check-input {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: #e3ebf6 !important;
+  border: none !important;
+  border-radius: 0.375rem !important;
+}
+
+.form-check-input:checked {
+  background-color: #2c7be5 !important;
+  border-color: #2c7be5 !important;
+}
+
+.o_field_widget.o_field_selection_badge .o_selection_badge {
+  border-radius: 3px;
+}
+
+.o_selection_badge.active {
+  color: white !important;
+  border-color: #2c7be5 !important;
+  background-color: #2c7be5;
+}
+
+.o_required_modifier.o_input,
+.o_required_modifier .o_input,
+.o_searchview .o_searchview_autocomplete li.o_selection_focus {
+  background-color: $one__primary-light !important;
+}
+
+.ui-menu-item {
+  background-color: white;
+  color: $one__primary-light;
+
+  a,
+  .dropdown-item {
+    &:hover {
+      background-color: $one__primary-light !important;
+      color: $one__primary !important;
+      transition: $transition-normal;
+    }
+  }
+}
+
+.o_field_widget.o_field_many2manytags .o_tag_color_5,
+.o_kanban_view .o_kanban_record .o_field_many2manytags .o_tag.o_tag_color_5 span,
+.o_kanban_view .o_kanban_record .o_kanban_tags .o_tag.o_tag_color_5 span {
+  background-color: $one__primary;
+}
+
+.o_field_widget.o_field_many2one {
+  position: relative;
+
+  .o_dropdown_button {
+    display: none;
+  }
+}
+
+.o_field_widget.o_field_many2one .o_external_button {
+  color: $one__primary;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none !important;
+  visibility: visible !important;
+  background-color: transparent;
+}
+
+.o_field_widget.o_field_image .o_form_image_controls {
+  background-color: $one__primary;
+}
+
+.o_field_widget.o_field_image .o_form_image_controls .fa.fa-trash {
+  color: white !important;
+}
+
+.o_field_widget .o_input_dropdown .o_dropdown_button:after,
+.o_field_widget .o_input_dropdown .o_datepicker_button:after,
+.o_field_widget.o_datepicker .o_dropdown_button:after,
+.o_field_widget .o_datepicker .o_datepicker_button:after {
+  margin-right: 5px;
+}
+
+.o_field_many2manytags .o_field_widget .o_input_dropdown .o_dropdown_button:after {
+  position: initial;
+  left: 0;
+  top: 0;
+}
+
+.o_form_view .o_row,
+.o_form_view .o_row.o_field_widget {
+  align-items: center;
+}
+
+.o_field_section_one2many {
+  width: 100%;
+}
+
+.badge-pill {
+  a {
+    color: $one__light;
+  }
+}
+
+.o_m2o_avatar {
+  img {
+    border-radius: 1rem !important;
+    margin-right: 5px;
+  }
+}
+
+.o_searchview .o_searchview_facet {
+  border-radius: 5px !important;
+
+  .o_searchview_facet_label {
+    margin: 0 !important;
+    background-color: #f9fbfd !important;
+    padding-top: 5px !important;
+    border: 1px solid !important;
+
+    .opacity-100-hover {
+      padding-top: 5px !important;
+      border-radius: 5px !important;
+    }
+  }
+}
+
+/* Chỉnh sửa kích thước cho input tags */
+.o_field_widget.o_field_many2many_tags {
+  height: auto !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+  /* Giới hạn chiều cao tối đa */
+
+  .o_field_tags {
+    min-height: 36px !important;
+    max-height: 36px !important;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+    padding: 0px 10px !important;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+
+    input.o_input {
+      margin: 0 !important;
+      padding: 0 !important;
+      border: none !important;
+      height: 36px !important;
+    }
+
+    .o_tag {
+      height: 24px !important;
+    }
+  }
+
+  .badge {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0.2rem 0.5rem !important;
+    font-size: 0.8rem !important;
+  }
+}
+
+.o_wrap_input .o_field_many2many_tags {
+  height: 34px !important;
+  overflow: hidden;
+}
+
+/* Điều chỉnh kích thước của dropdown selection */
+.o_field_many2many_tags .o_field_many2many_selection {
+  height: 34px !important;
+}
+
+/* Điều chỉnh input trống */
+.o_field_many2many_tags .o_field_many2many_selection input.o_input {
+  height: 24px !important;
+  min-height: 24px !important;
+  padding: 0.2rem 0.5rem !important;
+}
+
+/* Chỉnh sửa chung cho tất cả trường readonly char để đồng bộ */
+.o_field_widget.o_readonly_modifier.o_field_char {
+  border: 1px solid #d2ddec;
+  border-radius: 0.375rem;
+  min-height: 38px;
+  padding: 0.5rem 0.75rem !important;
+  background-color: #f9fbfd;
+  opacity: 0.65;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Đảm bảo span bên trong hiển thị đúng */
+.o_field_widget.o_readonly_modifier.o_field_char span {
+  display: inline-block;
+  width: 100%;
+}
+
+/* Sửa chiều cao và căn lề cho trường input Name */
+.o_form_view .oe_title {
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.o_form_view .oe_title input,
+.o_form_view .oe_title textarea {
+  height: 40px !important;
+  /* Giảm chiều cao của input */
+  font-size: 18px;
+  padding: 0.375rem 0.75rem !important;
+  /* Padding chuẩn Bootstrap */
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- List View: Queue Coordination Log -->
+    <record id="view_queue_coordination_log_list" model="ir.ui.view">
+        <field name="name">mate.queue.coordination.log.list</field>
+        <field name="model">mate.queue.coordination.log</field>
+        <field name="arch" type="xml">
+            <list string="Lịch sử điều phối" create="false">
+                <field name="coordination_type" string="Hoạt động" widget="selection"/>
+                <field name="patient_id" string="Khách hàng"/>
+                <field name="patient_pid" string="PID"/>
+                <field name="service_display" string="Dịch vụ"/>
+                <field name="room_display" string="Phòng"/>
+                <field name="position_display" string="Thứ tự khám"/>
+                <field name="user_id" string="Điều phối viên"/>
+                <field name="create_date" string="Thời gian" widget="datetime"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Search View: Queue Coordination Log -->
+    <record id="view_queue_coordination_log_search" model="ir.ui.view">
+        <field name="name">mate.queue.coordination.log.search</field>
+        <field name="model">mate.queue.coordination.log</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="patient_id" string="Bệnh nhân"/>
+                <field name="patient_pid" string="PID"/>
+                <field name="from_room_id" string="Từ phòng"/>
+                <field name="to_room_id" string="Đến phòng"/>
+                <field name="coordination_type" string="Loại hoạt động"/>
+                <field name="user_id" string="Điều phối viên"/>
+                
+                <separator/>
+                <filter string="Hôm nay" name="today" 
+                        domain="[('create_date', '&gt;=', datetime.datetime.combine(context_today(), datetime.time(0,0,0))), 
+                                 ('create_date', '&lt;', datetime.datetime.combine(context_today() + datetime.timedelta(days=1), datetime.time(0,0,0)))]"/>
+                <filter string="Tuần này" name="this_week" 
+                        domain="[('create_date', '&gt;=', (context_today() - datetime.timedelta(days=context_today().weekday())).strftime('%Y-%m-%d'))]"/>
+                <filter string="Tháng này" name="this_month" 
+                        domain="[('create_date', '&gt;=', context_today().strftime('%Y-%m-01'))]"/>
+                
+                <separator/>
+                <filter string="Phòng hiện tại" name="room_filter" 
+                        domain="['|', ('from_room_id', '=', context.get('default_room_id')), ('to_room_id', '=', context.get('default_room_id'))]"/>
+                
+                <group expand="0" string="Nhóm theo">
+                    <filter string="Loại hoạt động" name="group_coordination_type" context="{'group_by': 'coordination_type'}"/>
+                    <filter string="Phòng từ" name="group_from_room" context="{'group_by': 'from_room_id'}"/>
+                    <filter string="Phòng đến" name="group_to_room" context="{'group_by': 'to_room_id'}"/>
+                    <filter string="Ngày" name="group_date" context="{'group_by': 'create_date:day'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Action for Queue Coordination Log -->
+    <record id="action_queue_coordination_log" model="ir.actions.act_window">
+        <field name="name">Lịch sử điều phối</field>
+        <field name="res_model">mate.queue.coordination.log</field>
+        <field name="view_mode">list,form</field>
+        <field name="view_id" ref="view_queue_coordination_log_list"/>
+        <field name="search_view_id" ref="view_queue_coordination_log_search"/>
+        <field name="context">{}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Không có lịch sử điều phối
+            </p>
+        </field>
+    </record>
+</odoo>

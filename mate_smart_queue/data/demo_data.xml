@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Mở rộng Services với các trường của Queue -->
+        <record id="mate_health_check.service_registration" model="product.product">
+            <field name="code">REG</field>
+            <field name="service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="average_duration">5</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="mate_health_check.service_vital_signs" model="product.product">
+            <field name="code">VITAL</field>
+            <field name="service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="average_duration">8</field>
+            <field name="sequence">20</field>
+        </record>
+
+        <record id="mate_health_check.service_blood_test" model="product.product">
+            <field name="code">BLOOD</field>
+            <field name="service_group_id" ref="mate_health_check.group_laboratory"/>
+            <field name="average_duration">10</field>
+            <field name="sequence">30</field>
+        </record>
+
+        <record id="mate_health_check.service_urine_test" model="product.product">
+            <field name="code">URINE</field>
+            <field name="service_group_id" ref="mate_health_check.group_laboratory"/>
+            <field name="average_duration">8</field>
+            <field name="sequence">31</field>
+        </record>
+
+        <record id="mate_health_check.service_xray_chest" model="product.product">
+            <field name="code">XRAY</field>
+            <field name="service_group_id" ref="mate_health_check.group_imaging"/>
+            <field name="average_duration">12</field>
+            <field name="sequence">40</field>
+        </record>
+
+        <record id="mate_health_check.service_ultrasound_abdomen" model="product.product">
+            <field name="code">ULTRA</field>
+            <field name="service_group_id" ref="mate_health_check.group_imaging"/>
+            <field name="average_duration">15</field>
+            <field name="sequence">41</field>
+        </record>
+
+        <record id="mate_health_check.service_eye_exam" model="product.product">
+            <field name="code">EYE</field>
+            <field name="service_group_id" ref="mate_health_check.group_specialty_basic"/>
+            <field name="average_duration">12</field>
+            <field name="sequence">50</field>
+        </record>
+
+        <record id="mate_health_check.service_ent_exam" model="product.product">
+            <field name="code">ENT</field>
+            <field name="service_group_id" ref="mate_health_check.group_specialty_basic"/>
+            <field name="average_duration">10</field>
+            <field name="sequence">51</field>
+        </record>
+
+        <record id="mate_health_check.service_dermatology_exam" model="product.product">
+            <field name="code">SKIN</field>
+            <field name="service_group_id" ref="mate_health_check.group_specialty_basic"/>
+            <field name="average_duration">10</field>
+            <field name="sequence">52</field>
+        </record>
+
+        <record id="mate_health_check.service_internal_exam" model="product.product">
+            <field name="code">DOC</field>
+            <field name="service_group_id" ref="mate_health_check.group_consultation"/>
+            <field name="average_duration">15</field>
+            <field name="sequence">60</field>
+        </record>
+
+        <record id="mate_health_check.service_pharmacy" model="product.product">
+            <field name="code">PHARM</field>
+            <field name="service_group_id" ref="mate_health_check.group_pharmacy"/>
+            <field name="average_duration">5</field>
+            <field name="sequence">70</field>
+        </record>
+
+        <!-- Mở rộng Departments với các trường của Queue -->
+        <record id="mate_health_check.department_registration_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_registration"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_registration_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_registration"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_vitals_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_vital_signs"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_vitals_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_vital_signs"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_laboratory_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_blood_test"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_laboratory_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_urine_test"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_xray_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_xray_chest"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_xray_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_xray_chest"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ultrasound_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_ultrasound_abdomen"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ultrasound_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_ultrasound_abdomen"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ophthalmology_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_eye_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ophthalmology_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_eye_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ent_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_ent_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_ent_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_ent_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_dermatology_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_dermatology_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_dermatology_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_dermatology_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_internal_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_internal_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_internal_02" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_internal_exam"/>
+            <field name="state">open</field>
+        </record>
+
+        <record id="mate_health_check.department_pharmacy_01" model="hr.department">
+            <field name="service_id" ref="mate_health_check.service_pharmacy"/>
+            <field name="state">open</field>
+        </record>
+
+        <!-- Mở rộng Groups với các trường của Queue -->
+        <record id="mate_health_check.group_registration" model="mate.health.check.group">
+            <field name="code">REG_VITAL</field>
+            <field name="sequence">1</field>
+            <field name="is_required">True</field>
+            <field name="completion_policy">all</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_registration'),
+                ref('mate_health_check.service_vital_signs')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.group_laboratory" model="mate.health.check.group">
+            <field name="code">PARALLEL_TESTS</field>
+            <field name="sequence">2</field>
+            <field name="is_required">True</field>
+            <field name="completion_policy">all</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_blood_test'),
+                ref('mate_health_check.service_urine_test')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.group_imaging" model="mate.health.check.group">
+            <field name="code">IMAGING</field>
+            <field name="sequence">3</field>
+            <field name="is_required">True</field>
+            <field name="completion_policy">any</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_xray_chest'),
+                ref('mate_health_check.service_ultrasound_abdomen')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.group_specialty_basic" model="mate.health.check.group">
+            <field name="code">SPECIALTY</field>
+            <field name="sequence">4</field>
+            <field name="is_required">False</field>
+            <field name="completion_policy">any</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_eye_exam'),
+                ref('mate_health_check.service_ent_exam'),
+                ref('mate_health_check.service_dermatology_exam')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.group_consultation" model="mate.health.check.group">
+            <field name="code">CONSULT</field>
+            <field name="sequence">5</field>
+            <field name="is_required">True</field>
+            <field name="completion_policy">all</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_internal_exam')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.group_pharmacy" model="mate.health.check.group">
+            <field name="code">PHARMACY</field>
+            <field name="sequence">6</field>
+            <field name="is_required">False</field>
+            <field name="completion_policy">all</field>
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_pharmacy')
+            ])]"/>
+        </record>
+
+        <!-- Mở rộng Packages với service_ids -->
+        <record id="mate_health_check.package_basic" model="mate.health.check.package">
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_registration'),
+                ref('mate_health_check.service_vital_signs'),
+                ref('mate_health_check.service_blood_test'),
+                ref('mate_health_check.service_xray_chest'),
+                ref('mate_health_check.service_internal_exam')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.package_standard" model="mate.health.check.package">
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_registration'),
+                ref('mate_health_check.service_vital_signs'),
+                ref('mate_health_check.service_blood_test'),
+                ref('mate_health_check.service_urine_test'),
+                ref('mate_health_check.service_xray_chest'),
+                ref('mate_health_check.service_ultrasound_abdomen'),
+                ref('mate_health_check.service_eye_exam'),
+                ref('mate_health_check.service_internal_exam')
+            ])]"/>
+        </record>
+
+        <record id="mate_health_check.package_premium" model="mate.health.check.package">
+            <field name="service_ids" eval="[(6, 0, [
+                ref('mate_health_check.service_registration'),
+                ref('mate_health_check.service_vital_signs'),
+                ref('mate_health_check.service_blood_test'),
+                ref('mate_health_check.service_urine_test'),
+                ref('mate_health_check.service_xray_chest'),
+                ref('mate_health_check.service_ultrasound_abdomen'),
+                ref('mate_health_check.service_eye_exam'),
+                ref('mate_health_check.service_ent_exam'),
+                ref('mate_health_check.service_dermatology_exam'),
+                ref('mate_health_check.service_internal_exam'),
+                ref('mate_health_check.service_pharmacy')
+            ])]"/>
+        </record>
+
+        <!-- Queue Priorities -->
+        <record id="priority_normal" model="mate.queue.priority">
+            <field name="name">Thông Thường</field>
+            <field name="code">normal</field>
+            <field name="priority_level">0</field>
+            <field name="description">Bệnh nhân thông thường</field>
+            <field name="color">0</field>
+        </record>
+
+        <record id="priority_elderly" model="mate.queue.priority">
+            <field name="name">Người Cao Tuổi</field>
+            <field name="code">elderly</field>
+            <field name="priority_level">1</field>
+            <field name="description">Bệnh nhân trên 65 tuổi</field>
+            <field name="color">2</field>
+        </record>
+
+        <record id="priority_special_condition" model="mate.queue.priority">
+            <field name="name">Mang Thai/Khuyết Tật</field>
+            <field name="code">special</field>
+            <field name="priority_level">2</field>
+            <field name="description">Thai phụ hoặc người khuyết tật</field>
+            <field name="color">3</field>
+        </record>
+
+        <record id="priority_urgent" model="mate.queue.priority">
+            <field name="name">Tình Trạng Cấp Thiết</field>
+            <field name="code">urgent</field>
+            <field name="priority_level">3</field>
+            <field name="description">Tình trạng y tế cấp thiết</field>
+            <field name="color">4</field>
+        </record>
+
+        <record id="priority_vip" model="mate.queue.priority">
+            <field name="name">VIP</field>
+            <field name="code">vip</field>
+            <field name="priority_level">4</field>
+            <field name="description">Khách hàng VIP</field>
+            <field name="color">5</field>
+        </record>
+
+        <record id="priority_doctor_assigned" model="mate.queue.priority">
+            <field name="name">Bác Sĩ Chỉ Định</field>
+            <field name="code">doctor</field>
+            <field name="priority_level">5</field>
+            <field name="description">Ưu tiên đặc biệt do bác sĩ chỉ định</field>
+            <field name="color">6</field>
+        </record>
+
+        <record id="priority_emergency" model="mate.queue.priority">
+            <field name="name">Khẩn Cấp</field>
+            <field name="code">emergency</field>
+            <field name="priority_level">10</field>
+            <field name="description">Trường hợp khẩn cấp</field>
+            <field name="color">1</field>
+        </record>
+
+        <!-- Service Group Routes -->
+        <record id="route_registration_to_tests" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_registration"/>
+            <field name="group_to_id" ref="mate_health_check.group_laboratory"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_tests_to_imaging_basic" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_laboratory"/>
+            <field name="group_to_id" ref="mate_health_check.group_imaging"/>
+            <field name="package_id" ref="mate_health_check.package_basic"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_tests_to_imaging_standard" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_laboratory"/>
+            <field name="group_to_id" ref="mate_health_check.group_imaging"/>
+            <field name="package_id" ref="mate_health_check.package_standard"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_imaging_to_consultation_basic" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_imaging"/>
+            <field name="group_to_id" ref="mate_health_check.group_consultation"/>
+            <field name="package_id" ref="mate_health_check.package_basic"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_imaging_to_specialty_standard" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_imaging"/>
+            <field name="group_to_id" ref="mate_health_check.group_specialty_basic"/>
+            <field name="package_id" ref="mate_health_check.package_standard"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_specialty_to_consultation_standard" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_specialty_basic"/>
+            <field name="group_to_id" ref="mate_health_check.group_consultation"/>
+            <field name="package_id" ref="mate_health_check.package_standard"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <record id="route_consultation_to_pharmacy" model="mate.queue.service.group.route">
+            <field name="group_from_id" ref="mate_health_check.group_consultation"/>
+            <field name="group_to_id" ref="mate_health_check.group_pharmacy"/>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- Room Distances -->
+        <record id="distance_reg_to_vital" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_registration_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_vitals_01"/>
+            <field name="distance">1.0</field>
+            <field name="travel_time">2</field>
+        </record>
+
+        <record id="distance_vital_to_lab" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_vitals_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_laboratory_01"/>
+            <field name="distance">3.0</field>
+            <field name="travel_time">5</field>
+        </record>
+
+        <record id="distance_lab_to_xray" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_laboratory_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_xray_01"/>
+            <field name="distance">2.0</field>
+            <field name="travel_time">3</field>
+        </record>
+
+        <record id="distance_xray_to_ultra" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_xray_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_ultrasound_01"/>
+            <field name="distance">1.0</field>
+            <field name="travel_time">2</field>
+        </record>
+
+        <record id="distance_ultra_to_eye" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_ultrasound_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_ophthalmology_01"/>
+            <field name="distance">4.0</field>
+            <field name="travel_time">6</field>
+        </record>
+
+        <record id="distance_eye_to_doc" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_ophthalmology_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_internal_01"/>
+            <field name="distance">3.0</field>
+            <field name="travel_time">4</field>
+        </record>
+
+        <record id="distance_doc_to_pharm" model="queue.room.distance">
+            <field name="room_from_id" ref="mate_health_check.department_internal_01"/>
+            <field name="room_to_id" ref="mate_health_check.department_pharmacy_01"/>
+            <field name="distance">5.0</field>
+            <field name="travel_time">7</field>
+        </record>
+
+        <!-- Demo Patients -->
+        <record id="patient_nguyen_van_an" model="his.patient">
+            <field name="name">Nguyễn Văn An</field>
+            <field name="patient_id_number">001234567</field>
+            <field name="date_of_birth">1985-03-15</field>
+            <field name="gender">male</field>
+            <field name="patient_category">normal</field>
+            <field name="queue_package_id" ref="mate_health_check.package_basic"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345678</field>
+            <field name="email">nguyen.van.an@email.com</field>
+            <field name="street">123 Đường ABC</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_tran_thi_binh" model="his.patient">
+            <field name="name">Trần Thị Bình</field>
+            <field name="patient_id_number">001234568</field>
+            <field name="date_of_birth">1992-07-22</field>
+            <field name="gender">female</field>
+            <field name="patient_category">pregnant</field>
+            <field name="is_pregnant" eval="True"/>
+            <field name="queue_package_id" ref="mate_health_check.package_standard"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345679</field>
+            <field name="email">tran.thi.binh@email.com</field>
+            <field name="street">456 Đường DEF</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_le_minh_cuong" model="his.patient">
+            <field name="name">Lê Minh Cường</field>
+            <field name="patient_id_number">001234569</field>
+            <field name="date_of_birth">2010-12-08</field>
+            <field name="gender">male</field>
+            <field name="patient_category">child</field>
+            <field name="queue_package_id" ref="mate_health_check.package_basic"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345680</field>
+            <field name="email">le.minh.cuong@email.com</field>
+            <field name="street">789 Đường GHI</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_pham_thi_dung" model="his.patient">
+            <field name="name">Phạm Thị Dung</field>
+            <field name="patient_id_number">001234570</field>
+            <field name="date_of_birth">1955-05-18</field>
+            <field name="gender">female</field>
+            <field name="patient_category">elderly</field>
+            <field name="queue_package_id" ref="mate_health_check.package_standard"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345681</field>
+            <field name="email">pham.thi.dung@email.com</field>
+            <field name="street">321 Đường JKL</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_hoang_van_em" model="his.patient">
+            <field name="name">Hoàng Văn Em</field>
+            <field name="patient_id_number">001234571</field>
+            <field name="date_of_birth">1978-11-30</field>
+            <field name="gender">male</field>
+            <field name="patient_category">vip</field>
+            <field name="is_vip" eval="True"/>
+            <field name="queue_package_id" ref="mate_health_check.package_premium"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345682</field>
+            <field name="email">hoang.van.em@email.com</field>
+            <field name="street">654 Đường MNO</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_vu_thi_pha" model="his.patient">
+            <field name="name">Vũ Thị Pha</field>
+            <field name="patient_id_number">001234572</field>
+            <field name="date_of_birth">1988-02-14</field>
+            <field name="gender">female</field>
+            <field name="patient_category">normal</field>
+            <field name="queue_package_id" ref="mate_health_check.package_standard"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345683</field>
+            <field name="email">vu.thi.pha@email.com</field>
+            <field name="street">987 Đường PQR</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_do_van_gia" model="his.patient">
+            <field name="name">Đỗ Văn Gia</field>
+            <field name="patient_id_number">001234573</field>
+            <field name="date_of_birth">1990-08-25</field>
+            <field name="gender">male</field>
+            <field name="patient_category">normal</field>
+            <field name="queue_package_id" ref="mate_health_check.package_standard"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345684</field>
+            <field name="email">do.van.gia@email.com</field>
+            <field name="street">111 Đường STU</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_mai_thi_ha" model="his.patient">
+            <field name="name">Mai Thị Hà</field>
+            <field name="patient_id_number">001234574</field>
+            <field name="date_of_birth">1995-04-12</field>
+            <field name="gender">female</field>
+            <field name="patient_category">normal</field>
+            <field name="queue_package_id" ref="mate_health_check.package_basic"/>
+            <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+            <field name="phone">0912345685</field>
+            <field name="email">mai.thi.ha@email.com</field>
+            <field name="street">222 Đường VWX</field>
+            <field name="city">Hà Nội</field>
+        </record>
+
+        <record id="patient_ly_van_khanh" model="his.patient">
+            <field name="name">Lý Văn Khánh</field>
+            <field name="patient_id_number">999888777</field>
+            <field name="date_of_birth">1975-12-01</field>
+           <field name="gender">male</field>
+           <field name="patient_category">normal</field>
+           <field name="has_urgent_condition" eval="True"/>
+           <field name="queue_package_id" ref="mate_health_check.package_basic"/>
+           <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="phone">0912345686</field>
+           <field name="email">ly.van.khanh@email.com</field>
+           <field name="street">333 Đường YZ</field>
+           <field name="city">Hà Nội</field>
+       </record>
+
+       <record id="patient_cao_thi_loan" model="his.patient">
+           <field name="name">Cao Thị Loan</field>
+           <field name="patient_id_number">001234575</field>
+           <field name="date_of_birth">1945-06-20</field>
+           <field name="gender">female</field>
+           <field name="patient_category">elderly</field>
+           <field name="queue_package_id" ref="mate_health_check.package_standard"/>
+           <field name="current_service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="phone">0912345687</field>
+           <field name="email">cao.thi.loan@email.com</field>
+           <field name="street">444 Đường ABC</field>
+           <field name="city">Hà Nội</field>
+       </record>
+
+       <!-- Demo Tokens - Tất cả đều ở trạng thái waiting cho dịch vụ đăng ký -->
+       <!-- Token ưu tiên khẩn cấp - vị trí đầu tiên -->
+       <record id="token_ly_van_khanh_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_ly_van_khanh"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_basic"/>
+           <field name="priority_id" ref="priority_emergency"/>
+           <field name="priority">10</field>
+           <field name="emergency" eval="True"/>
+           <field name="state">waiting</field>
+           <field name="position">1</field>
+           <field name="notes">Trường hợp khẩn cấp - ưu tiên tối đa</field>
+       </record>
+
+       <!-- Token VIP - vị trí thứ 2 -->
+       <record id="token_hoang_van_em_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_hoang_van_em"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_premium"/>
+           <field name="priority_id" ref="priority_vip"/>
+           <field name="priority">4</field>
+           <field name="state">waiting</field>
+           <field name="position">2</field>
+           <field name="notes">Khách hàng VIP</field>
+       </record>
+
+       <!-- Token thai phụ - vị trí thứ 3 -->
+       <record id="token_tran_thi_binh_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_tran_thi_binh"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_standard"/>
+           <field name="priority_id" ref="priority_special_condition"/>
+           <field name="priority">2</field>
+           <field name="state">waiting</field>
+           <field name="position">3</field>
+           <field name="notes">Thai phụ - ưu tiên đặc biệt</field>
+       </record>
+
+       <!-- Token người cao tuổi - vị trí thứ 4 -->
+       <record id="token_pham_thi_dung_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_pham_thi_dung"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_standard"/>
+           <field name="priority_id" ref="priority_elderly"/>
+           <field name="priority">1</field>
+           <field name="state">waiting</field>
+           <field name="position">4</field>
+           <field name="notes">Người cao tuổi</field>
+       </record>
+
+       <!-- Token người cao tuổi khác - vị trí thứ 5 -->
+       <record id="token_cao_thi_loan_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_cao_thi_loan"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_standard"/>
+           <field name="priority_id" ref="priority_elderly"/>
+           <field name="priority">1</field>
+           <field name="state">waiting</field>
+           <field name="position">5</field>
+           <field name="notes">Người cao tuổi</field>
+       </record>
+
+       <!-- Token bệnh nhân thường - vị trí thứ 6 -->
+       <record id="token_nguyen_van_an_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_nguyen_van_an"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_basic"/>
+           <field name="priority_id" ref="priority_normal"/>
+           <field name="priority">0</field>
+           <field name="state">waiting</field>
+           <field name="position">6</field>
+           <field name="notes">Bệnh nhân thường</field>
+       </record>
+
+       <!-- Token trẻ em - vị trí thứ 7 -->
+       <record id="token_le_minh_cuong_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_le_minh_cuong"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_basic"/>
+           <field name="priority_id" ref="priority_normal"/>
+           <field name="priority">0</field>
+           <field name="state">waiting</field>
+           <field name="position">7</field>
+           <field name="notes">Trẻ em</field>
+       </record>
+
+       <!-- Token bệnh nhân thường - vị trí thứ 8 -->
+       <record id="token_vu_thi_pha_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_vu_thi_pha"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_standard"/>
+           <field name="priority_id" ref="priority_normal"/>
+           <field name="priority">0</field>
+           <field name="state">waiting</field>
+           <field name="position">8</field>
+           <field name="notes">Bệnh nhân thường</field>
+       </record>
+
+       <!-- Token bệnh nhân thường - vị trí thứ 9 -->
+       <record id="token_do_van_gia_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_do_van_gia"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_standard"/>
+           <field name="priority_id" ref="priority_normal"/>
+           <field name="priority">0</field>
+           <field name="state">waiting</field>
+           <field name="position">9</field>
+           <field name="notes">Bệnh nhân thường</field>
+       </record>
+
+       <!-- Token bệnh nhân thường - vị trí thứ 10 -->
+       <record id="token_mai_thi_ha_registration" model="mate.queue.token">
+           <field name="patient_id" ref="patient_mai_thi_ha"/>
+           <field name="service_id" ref="mate_health_check.service_registration"/>
+           <field name="service_group_id" ref="mate_health_check.group_registration"/>
+           <field name="package_id" ref="mate_health_check.package_basic"/>
+           <field name="priority_id" ref="priority_normal"/>
+           <field name="priority">0</field>
+           <field name="state">waiting</field>
+           <field name="position">10</field>
+           <field name="notes">Bệnh nhân thường</field>
+       </record>
+
+       <!-- Sequence cho token -->
+       <record id="sequence_queue_token" model="ir.sequence">
+           <field name="name">Queue Token Sequence</field>
+           <field name="code">mate.queue.token</field>
+           <field name="prefix">TK</field>
+           <field name="suffix"></field>
+           <field name="padding">6</field>
+           <field name="number_next">1</field>
+           <field name="number_increment">1</field>
+       </record>
+
+       <!-- Sequence cho coordination log -->
+       <record id="sequence_coordination_log" model="ir.sequence">
+           <field name="name">Coordination Log Sequence</field>
+           <field name="code">queue.coordination.log</field>
+           <field name="prefix">LOG</field>
+           <field name="suffix"></field>
+           <field name="padding">6</field>
+           <field name="number_next">1</field>
+           <field name="number_increment">1</field>
+       </record>
+
+   </data>
+</odoo>

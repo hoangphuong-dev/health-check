@@ -1,0 +1,2162 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* mate_smart_queue
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0-20250320\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-18 02:33+0000\n"
+"PO-Revision-Date: 2025-06-18 02:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "%(hours)d hours %(minutes)d minutes"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "%(minutes)d minutes"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+msgid "%d minutes"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "(Open) View Queue"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+msgid "0 minutes"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "2025-KSK-NCB"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "<i class=\"fa fa-bolt\"/> Emergency"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<i class=\"fa fa-building me-1\"/> By Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<i class=\"fa fa-comments me-1\"/> Pregnant"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid ""
+"<i class=\"fa fa-info-circle me-2\"/>\n"
+"                            <strong>Instructions:</strong> Just select patient and service. The system will automatically calculate wait time and suitable room."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<i class=\"fa fa-list me-1\"/> By Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<i class=\"fa fa-sort me-1\"/> By Position"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted d-block\">Estimate</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted d-block\">Position</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted d-block\">Waiting</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Address</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Age</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Contract Number</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Date of Birth</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Exam Group</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Exam Package</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Gender</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "<small class=\"text-muted small d-block mb-1\">Occupation</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "<small class=\"text-muted\">Expected wait:</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "<small class=\"text-muted\">Priority:</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "<small class=\"text-muted\">Service:</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "<small class=\"text-muted\">Status:</small>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_kanban
+msgid "<strong>Date of Birth:</strong>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_kanban
+msgid "<strong>Wait Time:</strong>"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_hr_department__code
+msgid "A unique code for the department, used for identification."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_package.py:0
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__active
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__active
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_package__active
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__active
+msgid "Active"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Actual Duration"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__actual_duration
+msgid "Actual Duration (minutes)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Actual Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_patient_list_main
+msgid "Add patients to the queue management system."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Additional Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Additional notes..."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Address"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__age
+msgid "Age"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Already in this service"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__room_id
+msgid "Assigned Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__available_coordination_service_ids
+msgid "Available Coordination Services"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__available_rooms_count
+msgid "Available Rooms Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__average_duration
+msgid "Average Service Duration (minutes)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Basic Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_selection_wizard_simple_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Cancel"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_token__state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "Cannot create route because it will create a loop!"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Cannot determine target room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Cannot determine target service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Cannot perform coordination: %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__capacity
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "Capacity"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Category"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_selection_wizard_simple_form
+msgid "Change Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_room_selection_wizard__coordination_type__service_room_change
+msgid "Change room for service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_room_selection_wizard__coordination_type__room_change
+msgid "Change room same service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__patient_category__child
+msgid "Child"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Children"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.actions.act_window,name:mate_smart_queue.action_queue_room
+msgid "Clinic Rooms (Coordination)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "Clinic Rooms - Coordination"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__hr_department__state__closed
+msgid "Closed"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__color
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__color
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__color
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__color
+msgid "Color"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_list
+msgid "Complete"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_health_check_group__completion_policy__all
+msgid "Complete All"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_health_check_group__completion_policy__any
+msgid "Complete Any"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_token__state__completed
+msgid "Completed"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__completed_service_ids
+msgid "Completed Services"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__completion_policy
+msgid "Completion Policy"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_selection_wizard_simple_form
+msgid "Confirm"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Confirm coordination to this service? Current token will be cancelled."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Coordinate"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Coordinated from %s at %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Coordinated from service %s to %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Coordination Error"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__coordination_reason
+msgid "Coordination Reason"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__coordination_service_info
+msgid "Coordination Service Details"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__coordination_date
+msgid "Coordination Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__coordination_type
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__coordination_type
+msgid "Coordination Type"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_queue_room
+msgid "Create clinic rooms to start patient coordination."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_queue_token
+msgid "Create first token"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_queue_token
+msgid "Create token for patient waiting for service."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_patient_list_main
+msgid "Create your first patient"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_list
+msgid "Created Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__create_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__create_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Created via room customization"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__current_queue
+msgid "Current Queue"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__is_current
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__current_room_id
+msgid "Current Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__current_service_group_id
+msgid "Current Service Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__current_waiting_token_id
+msgid "Current Waiting Token"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+msgid "Customer"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__date_of_birth
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Date of Birth"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__description
+msgid "Description"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__display_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__distance
+msgid "Distance (unit)"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+msgid "Distance between room %s and room %s already exists!"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__doctor_assigned_priority
+msgid "Doctor Assigned Priority"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__duration_count
+msgid "Duration Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__patient_category__elderly
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Elderly"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__emergency
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Emergency"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__end_time
+msgid "End Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Error"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__estimated_time
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__estimated_wait_time
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Estimated Wait Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__estimated_wait_time
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__estimated_wait_time
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__estimated_wait_time
+msgid "Estimated Wait Time (minutes)"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_queue_room_distance__travel_time
+msgid "Estimated travel time between two rooms"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Examination Package"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__gender__female
+msgid "Female"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__from_room_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__room_from_id
+msgid "From Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__from_service_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__service_from_id
+msgid "From Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__group_from_id
+msgid "From Service Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__gender
+msgid "Gender"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_room_selection_line__wait_time_color__green
+msgid "Green"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Group By"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__code
+msgid "Group Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_mate_health_check_group_code_uniq
+msgid "Group code must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__has_urgent_condition
+msgid "Has Urgent Condition"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__health_check_batch_id
+msgid "Health Check Batch"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_package.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_health_check_package
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__queue_package_id
+msgid "Health Check Package"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_priority__priority_level
+msgid "Higher number indicates higher priority"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__id
+msgid "ID"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_health_check_group__is_required
+msgid ""
+"If checked, all services in the group must be completed. Otherwise, "
+"completing one service may be enough to move to the next group."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__message_has_error
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_service_route__package_id
+msgid "If set, this route only applies to this service package"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_token__state__in_progress
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "In Progress"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_package.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_package__service_ids
+msgid "Included Services"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__is_disabled
+msgid "Is Disabled"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__is_parallel
+msgid "Is Parallel Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__is_pregnant
+msgid "Is Pregnant"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__is_vip
+msgid "Is VIP"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model,name:mate_smart_queue.model_queue_room_distance
+msgid "Khoảng Cách Giữa Các Phòng"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__write_uid
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__write_date
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "Location"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__name
+msgid "Log Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_service_route__sequence
+msgid "Lower number has higher priority when multiple routes can be applied"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__hr_department__state__maintenance
+msgid "Maintenance"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__gender__male
+msgid "Male"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model,name:mate_smart_queue.model_his_patient
+msgid "Mate Queue Patient"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Medical History"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Medical Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model,name:mate_smart_queue.model_product_product
+msgid "Medical Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_health_check_group
+msgid "Medical Service Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Missing service or room information"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "NCB Commercial Joint Stock Bank"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__patient_category__nccvcm
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "NCCVCM"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "New"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "New Group Route"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__new_position
+msgid "New Position"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "New Route"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__new_token_id
+msgid "New Token"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "New route has been created"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Next Priority Services"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__next_recommended_service_id
+msgid "Next Recommended Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__next_service_id
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Next Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_name
+msgid "Next Service Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "No Waiting Services"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "No available room for service %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "No available rooms"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.actions.act_window,help:mate_smart_queue.action_queue_room
+msgid "No clinic rooms yet"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "No service waiting"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "None"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__patient_category__normal
+msgid "Normal Customer"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__notes
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Notes"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Notes about this token..."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Notification"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_hr_department__capacity
+msgid "Number of patients that can be served simultaneously"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__old_position
+msgid "Old Position"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__old_token_id
+msgid "Old Token"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__hr_department__state__open
+msgid "Open"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Open Rooms"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_room_selection_line__wait_time_color__orange
+msgid "Orange"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__origin_token_id
+msgid "Origin Token"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__origin_token_id
+msgid "Original token that created this token"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__gender__other
+msgid "Other"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__parallel_token_ids
+msgid "Other tokens in the same parallel service group"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "PID"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "PID:"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_package.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_package__code
+msgid "Package Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_package.py:0
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_mate_health_check_package_code_uniq
+msgid "Package code must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__parallel_token_ids
+msgid "Parallel Tokens"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__patient_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__patient_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__patient_id
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Patient"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__patient_category
+msgid "Patient Category"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Patient Details"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__patient_id_number
+msgid "Patient ID"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_his_patient__patient_id_number
+msgid "Patient ID Number"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Patient Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.actions.act_window,name:mate_smart_queue.action_patient_list_main
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_kanban
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+msgid "Patient List"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Patient Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_token
+msgid "Patient Queue Token"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid ""
+"Patient has not registered for any service or has completed all services."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__user_id
+msgid "Performer"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Personal Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Personal QR Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+msgid "Please select a room to transfer to"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_position
+msgid "Position"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_coordination_log__coordination_type__position_change
+msgid "Position Change in Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Position in Queue"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__his_patient__patient_category__pregnant
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Pregnant"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__sequence
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__sequence
+msgid "Priority"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__code
+msgid "Priority Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__priority
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__priority_level
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__priority
+msgid "Priority Level"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_priority__name
+msgid "Priority Level Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__priority_id
+msgid "Priority Type"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_mate_queue_priority_code_uniq
+msgid "Priority code must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_mate_queue_priority_priority_level_uniq
+msgid "Priority level must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_service_route__condition
+msgid "Python expression to determine whether this route should be used"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.actions.act_window,name:mate_smart_queue.action_queue_token
+msgid "Queue"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_coordination_log
+msgid "Queue Coordination Log"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_queue_count
+msgid "Queue Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__queue_history_ids
+msgid "Queue History"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__queue_length
+msgid "Queue Length"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__position
+msgid "Queue Position"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_priority
+msgid "Queue Priority Type"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_room_selection_line
+msgid "Queue Room Selection Line"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_room_selection_wizard
+msgid "Queue Room Selection Wizard"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__is_recommended
+msgid "Recommended"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_room_selection_line__wait_time_color__red
+msgid "Red"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_queue_room_distance__distance
+msgid ""
+"Relative distance between rooms, unit is optional (can be meters, steps, "
+"etc.)"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__is_required
+msgid "Required"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_room
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__room_id
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+msgid "Room %s has been closed. Please reassign patients if needed."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_coordination_log__coordination_type__room_change
+msgid "Room Change"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__code
+msgid "Room Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__room_line_ids
+msgid "Room List"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "Room Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room changed from %(old_room)s to %(new_room)s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room changed from %s to %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_hr_department_code_uniq
+msgid "Room code must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room does not exist"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room does not support current service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room does not support this service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Room is closed or under maintenance"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__name
+msgid "Route Name"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "Route has been updated"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_token__state__draft
+msgid "Scheduled"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_search
+msgid "Search Patients"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Search patient..."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_selection_wizard_simple_form
+msgid "Select New Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Select service..."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__selected_room_id
+msgid "Selected Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+msgid "Selected room is the same as current room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__sequence
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__service_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_wizard__service_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__service_id
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_coordination_log__coordination_type__service_change
+msgid "Service Change"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__code
+msgid "Service Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__service_group_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__service_group_id
+msgid "Service Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_service_group_route
+msgid "Service Group Route"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__package_id
+msgid "Service Package"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model,name:mate_smart_queue.model_hr_department
+msgid "Service Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model,name:mate_smart_queue.model_mate_queue_service_route
+msgid "Service Route"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.constraint,message:mate_smart_queue.constraint_product_product_code_uniq
+msgid "Service code must be unique!"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Service does not exist"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,help:mate_smart_queue.field_product_product__service_group_id
+msgid "Service group that this service belongs to"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Service has been completed"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Service is not in health check package"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Service or room does not exist"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service_group.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_health_check_group__service_ids
+msgid "Services in Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__rooms_ids
+msgid "Serving Rooms"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+msgid "Source room and destination room must be different!"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__package_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__package_id
+msgid "Specific Service Package"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_list
+msgid "Start"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__start_time
+msgid "Start Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_hr_department__state
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__state
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Status"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Status & Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Street..."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "Success"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__suggested_room_name
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Suggested Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__coordination_summary
+msgid "Summary"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "System Error"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_form
+msgid "Tags..."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__to_room_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__room_to_id
+msgid "To Room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_coordination_log.py:0
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_coordination_log__to_service_id
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__service_to_id
+msgid "To Service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__group_to_id
+msgid "To Service Group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+msgid "Token - %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_token_name
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__name
+msgid "Token Code"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room.py:0
+msgid "Token Coordination - %s"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__queue_history_count
+msgid "Token Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Token Information"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_form
+msgid "Token will be created automatically"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_group_route__condition
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_service_route__condition
+msgid "Transfer Condition"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_distance.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_queue_room_distance__travel_time
+msgid "Travel Time (minutes)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/patient.py:0
+msgid "Unknown error"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "View Coordination History"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_his_patient__next_service_wait_time
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_list_custom
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+msgid "Wait Time"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Wait Time (min)"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__wait_time_text
+msgid "Wait Time Text"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields.selection,name:mate_smart_queue.selection__mate_queue_token__state__waiting
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_room_coordination_list
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_search
+msgid "Waiting"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__waiting_count
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "Waiting Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_product_product__waiting_queue_count
+msgid "Waiting Queue Count"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_service.py:0
+msgid "Warning"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_token__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model:ir.model.fields,help:mate_smart_queue.field_mate_queue_token__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_room_selection_wizard.py:0
+#: model:ir.model.fields,field_description:mate_smart_queue.field_mate_queue_room_selection_line__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "auto_created_after_completing_service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "auto_created_after_completing_service_group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "auto_created_from_service_group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "auto_created_to_complete_service_group"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "automatic_room_change_notification"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "can_only_change_waiting_token_position"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "can_only_complete_in_progress_tokens"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "can_only_start_waiting_tokens"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "cannot_cancel_completed_or_cancelled_token"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "completed"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "completed_last_service_for_patient"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "emergency"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "error_changing_token_position"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "instruct_patient_to_room"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_detail_form
+msgid "min"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_queue_token_coordination_kanban
+msgid "minutes"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "next_recommended_service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "next_service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "no_available_room_for_service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "no_route_found_from_service"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "no_suitable_next_service_found"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "position_change_reason"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "token_moved_from_room_to_room"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "wait_after_completing_test"
+msgstr ""
+
+#. module: mate_smart_queue
+#. odoo-python
+#: code:addons/mate_smart_queue/models/queue_token.py:0
+msgid "warning_missing_service_route"
+msgstr ""
+
+#. module: mate_smart_queue
+#: model_terms:ir.ui.view,arch_db:mate_smart_queue.view_partner_patient_kanban
+msgid "| PID:"
+msgstr ""

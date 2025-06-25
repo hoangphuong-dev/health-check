@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-name="mate_hms_package.ListViewReconcile.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="action_upload_service">
+                Upload Package
+            </button>
+        </xpath>
+    </t>
+    <t t-name="mate_hms_appointment.ListViewReconcile.Buttons" t-inherit="web.ListView.Buttons" t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o_list_buttons')]" position="inside">
+            <button class="btn btn-primary" t-on-click="action_upload_service">
+                Upload Service
+            </button>
+        </xpath>
+    </t>
+</templates>

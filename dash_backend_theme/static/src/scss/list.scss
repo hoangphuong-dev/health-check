@@ -1,0 +1,111 @@
+.table-sm > :not(caption) > * > * {
+  padding: 1rem !important;
+  font-size: 0.9375rem;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) > * {
+  --table-accent-bg: transparent;
+}
+
+.table-hover {
+  > tbody > tr:hover > * {
+    --table-accent-bg: #f9fbfd;
+  }
+}
+
+.o_list_view .o_control_panel .o_cp_pager.text-nowrap {
+  display: none !important;
+}
+
+.rmt_list_view .o_list_table {
+  margin-bottom : 56px !important;
+}
+
+.o_list_view .o_list_table {
+    background-color: #fff;
+    border-color: #edf2f9;
+  }
+
+  .o_list_view thead {
+    background-color: #f9fbfd !important;
+  }
+
+  .o_list_renderer .o_list_table thead th {
+    background-color: #f9fbfd !important;
+    color: #95aac9;
+    font-size: .700rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border-bottom: 1px solid $one__border-light;
+    vertical-align: bottom;
+    i {
+      color: #95aac9;
+    }
+  }
+
+  .o_list_renderer .o_data_row.o_data_row_selected {
+    border-color: transparent !important;
+  }
+
+  .o_list_view .o_list_table thead > tr > th:not(.o_list_record_selector) {
+    border-left: none;
+  }
+
+  .o_form_view table thead th {
+    background-color: #f9fbfd !important;
+  }
+
+  table-sm th,
+  .table-sm td {
+    border-top: none !important;
+  }
+  .o_list_view .o_list_table tfoot, table tfoot {
+    background-color: #fff;
+  }
+  table.o_section_and_note_list_view tr.o_data_row.o_is_line_section,
+  div.oe_kanban_card.o_is_line_section {
+    background-color: #f9fbfd;
+  }
+  .o_list_view .o_list_table tr:focus-within,
+  .o_list_view .o_list_table.table-striped tr:focus-within {
+    background-color: rgba(0, 0, 0, 0.04);
+  }
+  .o_list_view tbody > tr.o_group_header {
+    background-image: unset;
+  }
+
+  .o_list_renderer .o_data_row.o_selected_row > .o_data_cell.o_required_modifier:not(.o_readonly_modifier) {
+    border-bottom: none !important;
+  }
+
+.o_purchase_dashboard .table > thead > tr > td.o_main,
+.o_purchase_dashboard .table tbody > tr > td.o_main {
+  background-color: $one__primary;
+
+  &:hover {
+    background-color: $one__primary-dark;
+  }
+
+  a {
+    color: $one__light;
+  }
+}
+
+.one2many_relative_layout {
+  .o_column_sortable  {
+    user-select: none;
+    pointer-events: none;
+  }
+  .o_list_sortable_caret  {
+    display: none;
+  }
+  .o_field_x2many_list_row_add {
+    padding-left: 37px !important;
+  }
+  .o_data_row {
+    .o_data_cell:first-child {
+      padding-left: 37px !important;
+    }
+  }
+}

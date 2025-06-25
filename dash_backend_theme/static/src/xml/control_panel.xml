@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ControlPanel" t-inherit-mode="extension">
+        <xpath expr="//div[hasclass('o_control_panel')]" position="attributes">
+            <attribute name="class">o_control_panel gap-3 gap-lg-1 px-3 mt-2</attribute>
+        </xpath>
+        <xpath expr="//div[hasclass('o_control_panel_actions')]" position="replace" />
+        <xpath expr="//div[hasclass('o_cp_pager')]" position="replace" />
+        <xpath expr="//div[hasclass('o_control_panel_main_buttons')]" position="replace" />
+
+        <xpath expr="//div[hasclass('o_control_panel_main')]" position="before">
+            <div class="apps_toggle position-absolute d-xl-none d-sm-none m-1 p-1">
+                <i class="fa fa-lg fa-bars pt-1" />
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_control_panel_main')]" position="attributes">
+            <attribute name="class">o_control_panel_main d-flex flex-wrap flex-lg-nowrap align-items-lg-start gap-3 flex-grow-1</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_control_panel_breadcrumbs')]" position="attributes">
+            <attribute name="class">o_control_panel_breadcrumbs d-flex align-items-center gap-1 order-0 h-lg-100 me-auto</attribute>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_control_panel_main')]" position="after">
+            <div t-if="filterItems.length > 0 and env.config.breadcrumbs.length == 1 and env.config.viewType != 'form'" style="margin: 10px 20px;">
+                <ul class="nav nav-tabs nav-overflow header-tabs" style="background:transparent;height: 56px;">
+                    <t t-foreach="filterItems" t-as="item" t-key="item.id">
+                        <li class="nav-item">
+                            <a class="control-filter-item nav-link text-nowrap"
+                                t-att-data="item.id"
+                                t-on-click="(ev) => this.onFilterSelected(ev, item.id)">
+                                <t t-esc="item.description" />
+                            </a>
+                        </li>
+                    </t>
+                    <li t-if="state.customQuery" class="nav-item">
+                        <a class="control-filter-item nav-link text-nowrap custom-query">
+                            <span class="badge text-bg-info py-1">Qustom Queries</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_container">
+                <div class="px-3 pt-3">
+                    <div class="o_control_panel_container d-flex flex-row-reverse pe-2">
+                        <div class="o_control_panel_actions d-empty-none d-flex align-items-center justify-content-start justify-content-lg-around order-2 order-lg-1 w-100 w-lg-auto flex-grow-1">
+                            <t t-if="display.layoutActions" t-slot="layout-actions"/>
+                            <t t-slot="control-panel-selection-actions"/>
+                        </div>
+                        <t t-slot="control-panel-additional-actions"/>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_control_panel_navigation')]" position="replace">
+            <div class="o_control_panel_navigation d-flex flex-wrap flex-md-nowrap justify-content-end gap-3 gap-lg-1 gap-xl-3 order-1 order-lg-2 flex-grow-1">
+                <div class="o_control_panel_main_buttons d-flex gap-1 d-empty-none d-print-none" t-ref="mainButtons" t-on-keydown="onMainButtonsKeydown">
+                    <div class="btn-group d-xl-none o_control_panel_collapsed_create">
+                        <t t-slot="control-panel-create-button"/>
+                        <button t-att-class="{invisible: display.disableDropdown}" type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split o_control_panel_collapsed_create" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu o_control_panel_collapsed_create">
+                            <t t-slot="layout-buttons"/>
+                            <t t-slot="control-panel-always-buttons"/>
+                        </ul>
+                    </div>
+                    <div class="d-none d-xl-inline-flex gap-1">
+                        <t t-slot="control-panel-create-button"/>
+                        <t t-slot="layout-buttons"/>
+                        <t t-slot="control-panel-always-buttons"/>
+                    </div>
+                </div>
+                <div t-if="pagerProps and pagerProps.total > 0" class="o_cp_pager text-nowrap " role="search">
+                    <Pager t-props="pagerProps"/>
+                </div>
+                <t t-if="env.config.viewSwitcherEntries?.length > 1">
+                    <div class="o_cp_switch_buttons btn-group d-print-none">
+                        <Dropdown>
+                            <button class="btn btn-secondary o-dropdown-caret">
+                                <t t-set="activeView" t-value="env.config.viewSwitcherEntries.find((view) => view.active)"/>
+                                <i class="oi-fw" t-att-class="activeView.icon"/>
+                            </button>
+                            <t t-set-slot="content">
+                                <t t-foreach="env.config.viewSwitcherEntries" t-as="view" t-key="view.type">
+                                    <DropdownItem onSelected="() => this.switchView(view.type)" class="view.active ? 'selected' : ''">
+                                        <i class="oi-fw" t-att-class="view.icon"/>
+                                        <span class="ms-1" t-out="view.name"/>
+                                    </DropdownItem>
+                                </t>
+                            </t>
+                        </Dropdown>
+                    </div>
+                </t>
+                <t t-if="!env.isSmall and isSplitViewAvailable">
+                    <button class="btn btn-light btn-split-view"
+                        data-tooltip="Split View"
+                        t-on-click="() => this.onSplitViewClicked()"
+                        >
+                        <i class="oi oi-panel-right"/>
+                    </button>
+                </t>
+                <t t-slot="control-panel-navigation-additional"/>
+            </div>
+        </xpath>
+    </t>
+
+    <t t-inherit="web.Breadcrumbs" t-inherit-mode="extension">
+        <xpath expr="//div[@t-if='collapsedBreadcrumbs.length || visiblePathBreadcrumbs.length']" position="attributes">
+            <attribute name="class">o_breadcrumb d-flex flex-row flex-md-column align-self-stretch min-w-0</attribute>
+        </xpath>
+        <xpath expr="//t[@t-call='web.Breadcrumb.Actions']" position="replace" />
+        <xpath expr="//t[@t-call='web.Breadcrumb.Actions']" position="replace" />
+    </t>
+
+</templates>

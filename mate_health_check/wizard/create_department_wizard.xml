@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_mate_create_department_wizard_form" model="ir.ui.view">
+        <field name="name">mate.create.department.wizard.form</field>
+        <field name="model">mate.create.department.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Department">
+                <label for="specialty_id" class="mate-label">Specialty</label>
+                <br />
+                <div>
+                    <field class="w-100" name="specialty_id" />
+                </div>
+                <field name="department_ids">
+                    <list editable="bottom" create="true" delete="true">
+                        <field name="code" required="1" />
+                        <field name="name" />
+                        <field name="location" />
+                        <field name="capacity" />
+                    </list>
+                </field>
+                <footer>
+                    <button name="save_department" string="Save" type="object"
+                        class="btn-primary" />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mate_create_department_wizard" model="ir.actions.act_window">
+        <field name="name">Create Department</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mate.create.department.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

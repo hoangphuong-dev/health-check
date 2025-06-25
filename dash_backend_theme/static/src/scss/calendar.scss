@@ -1,0 +1,72 @@
+
+.o_calendar_view
+  .o_calendar_widget
+  .fc-timeGridDay-view
+  .fc-widget-header.fc-today,
+.o_calendar_view
+  .o_calendar_widget
+  .fc-timeGridWeek-view
+  .fc-widget-header.fc-today {
+  background-color: $one__primary;
+}
+.o_calendar_sidebar_container
+  .ui-datepicker
+  td.ui-datepicker-current-day.ui-datepicker-today
+  a,
+.o_calendar_sidebar_container .ui-datepicker td.ui-datepicker-current-day a,
+.o_calendar_view
+  .o_calendar_widget
+  .fc-dayGridMonth-view
+  .fc-content-skeleton
+  .fc-today
+  .fc-day-number {
+  color: $one__light !important;
+  background-color: $one__primary !important;
+}
+
+.o_calendar_sidebar_container .ui-datepicker td a {
+  color: $one__light-font-secondary;
+}
+.o_calendar_sidebar_container .ui-datepicker td.ui-datepicker-today a {
+  background-color: $one__border-light;
+}
+
+.o_calendar_sidebar_container
+  .ui-datepicker
+  .o_selected_range.o_color:not(.ui-datepicker-unselectable) {
+  animation: fadeCalendarRow 2s forwards;
+}
+
+.fc-now-indicator {
+  border-color: $one__primary !important;
+}
+.fc-ltr .fc-time-grid .fc-now-indicator-arrow {
+  left: 0;
+  border-width: 5px 0 5px 6px;
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+}
+
+.o_calendar_view .fc-view .fc-event.o_calendar_color_1.o_cw_custom_highlight {
+  box-shadow: 0 12px 12px -5px rgba(156, 181, 245, 0.8);
+  color: $one__primary;
+  font-weight: bold;
+}
+.o_calendar_view .fc-view .fc-event.o_calendar_color_1 .fc-bg {
+  background-color: $one__primary-light;
+}
+.o_calendar_view .fc-view .fc-event.o_calendar_color_1 {
+  border-color: $one__primary;
+  color: #274aa5;
+  opacity: 0.8;
+
+  &:hover {
+    background: $one__primary-light;
+    box-shadow: 0 12px 12px -5px rgba(156, 181, 245, 0.8);
+  }
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+  background-color: $one__primary !important;
+}

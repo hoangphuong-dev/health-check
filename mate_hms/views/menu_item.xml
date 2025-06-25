@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- HMS Main Menu and sub menus -->
+    <menuitem id="menu_hms" name="HMS" sequence="260" groups="mate_hms_base.group_hms_manager"
+        web_icon="mate_hms_base,static/description/icon.png" />
+
+    <menuitem id="action_menu_patient" name="Patients" sequence="0" parent="menu_hms"
+        action="mate_hms_base.mate_action_patient" />
+
+    <menuitem id="action_menu_doctors" name="Physicians" parent="menu_hms"
+        action="mate_hms_base.mate_action_physician" sequence="2" />
+
+    <menuitem id="action_menu_treatment" name="Treatments" parent="menu_hms" sequence="3"
+        action="mate_action_form_hospital_treatment" />
+
+    <menuitem id="menu_mate_patient_procedure" name="Patient Procedures" parent="menu_hms"
+        action="action_mate_patient_procedure" sequence="4" />
+
+    <menuitem id="menu_appointment" name="Appointment" sequence="5" parent="menu_hms"
+        action="action_appointment" />
+
+
+    <!-- Patient Configuration Menu-->
+    <menuitem id="menu_medical_alerts" name="Medical Alerts" sequence="11"
+        parent="mate_hms_base.mate_menu_hms_patient_cofig" action="mate_hms.act_open_medical_alerts" />
+    <menuitem id="menu_family_relation" name="Family Relation"
+        action="mate_hms.action_mate_family_relation"
+        parent="mate_hms_base.mate_menu_hms_patient_cofig"
+        sequence="12" />
+    <menuitem id="menu_ethnicity" name="Ethnicity" sequence="25"
+        parent="mate_hms_base.mate_menu_hms_patient_cofig"
+        action="mate_hms.act_open_mate_ethnicity_view" />
+
+    <menuitem id="diseases_menu" name="Diseases" parent="mate_hms_base.mate_menu_hms_patient_cofig"
+        sequence="40" />
+    <menuitem id="hms_diseases" name="Diseases" action="mate_hms.act_open_diseases_view"
+        parent="diseases_menu" sequence="0" />
+    <menuitem id="menu_disease_category" name="Disease Categories" sequence="10"
+        parent="diseases_menu" action="mate_hms.act_open_mate_disease_category_view" />
+    <menuitem id="menu_hms_genetic_disease" name="Genetic Disease" sequence="20"
+        parent="diseases_menu" action="mate_hms.action_hms_genetic_disease" />
+>
+
+
+    <!-- Main Appointment Menu -->
+    <menuitem id="action_main_menu_appointmnet_opd" action="action_appointment" sequence="25"
+        groups="mate_hms.group_hms_receptionist,mate_hms.group_hms_jr_doctor,mate_hms.group_mate_hms_appointment_user"
+        web_icon="mate_hms,static/src/img/appointment.png" />
+
+    <menuitem id="action_main_menu_appointmnet_main" action="action_appointment" sequence="0" parent="mate_hms.action_main_menu_appointmnet_opd"/>
+
+    <!-- Appointment Configuration -->
+    <menuitem id="menu_appointment_cofig" name="Configuration"
+        parent="mate_hms.action_main_menu_appointmnet_opd" sequence="100" />
+    <menuitem id="menu_patient_appointment" name="Appointment Purpose" sequence="0"
+        parent="mate_hms.menu_appointment_cofig" action="act_open_appointment_purpose"
+        groups="mate_hms_base.group_hms_manager" />
+    <menuitem id="menu_open_appointment_cabin" name="Appointment Cabin" sequence="1"
+        parent="mate_hms.menu_appointment_cofig" action="act_open_appointment_cabin"
+        groups="mate_hms_base.group_hms_manager" />
+    <menuitem id="menu_mate_hms_cancel_reason" name="Cancel Reason" sequence="50"
+        parent="menu_appointment_cofig" action="action_mate_hms_cancel_reason_wiz"
+        groups="mate_hms_base.group_hms_manager" />
+
+</odoo>

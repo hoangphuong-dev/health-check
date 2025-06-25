@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Create Group Sequence Wizard Form View -->
+    <record id="view_create_group_sequence_wizard_form" model="ir.ui.view">
+        <field name="name">create.group.sequence.wizard.form</field>
+        <field name="model">create.group.sequence.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Create Group Sequence">
+                <field name="group_sequence_ids"
+                    context="{'default_package_id': context.get('default_package_id')}">
+                    <list editable="bottom" create="true" delete="true">
+                        <field name="sequence" required="1" />
+                        <field name="package_id" column_invisible="1" />
+                        <field name="group_id" required="1" />
+                    </list>
+                </field>
+                <footer>
+                    <button string="Save" class="btn-primary" type="object"
+                        name="action_save_group_sequence" />
+                    <button string="Close" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+    <!-- Action for Create Group Sequence Wizard -->
+    <record id="action_mate_create_group_sequence_wizard" model="ir.actions.act_window">
+        <field name="name">Create Group Sequence</field>
+        <field name="res_model">create.group.sequence.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

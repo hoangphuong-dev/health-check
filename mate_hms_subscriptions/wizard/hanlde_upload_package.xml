@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_mate_hms_subscriptions_handle_upload_package_form" model="ir.ui.view">
+        <field name="name">mate_hms_subscriptions.handle.upload.package.form</field>
+        <field name="model">mate_hms_subscriptions.handle.upload.package</field>
+        <field name="arch" type="xml">
+            <form string="Upload Package">
+                <group>
+                    <field name="excel_file_name" invisible="1"/>
+                    <field name="excel_file" string="Excel File (supported formats: .xls, .xlsx)" widget="binary"
+                       filename="excel_file_name"
+                       options="{'accepted_file_extensions': '.xls,.xlsx'}"/>
+                </group>
+                <div class="one2many_relative_layout">
+                    <field name="package_line_ids" style="height: 300px; overflow-y: auto;" 
+                        invisible="not excel_file" options="{'no_quick_create': True, 'no_create_edit': True, 'no_create': True, 'no_open': True}">
+                        <list string="Package" create="0" edit="0" no_open="1">
+                            <field name="code" string="Code" width="150"/>
+                            <field name="package_name" string="Package"/>
+                            <field name="name" string="Product/Service"/>
+                            <field name="quantity" string="Quantity"/>
+                            <field name="start_date" column_invisible="1"/>
+                            <field name="package_code" column_invisible="1"/>
+                            <field name="category" column_invisible="1"/>
+                            <field name="end_date" column_invisible="1"/>
+                        </list>
+                    </field>
+                </div>
+                <footer>
+                    <button name="save_package" string="Save" type="object"
+                        class="btn-primary"/>
+                    <button name="download_template_file" string="Download Template" type="object" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_mate_hms_subscriptions_handle_upload_package" model="ir.actions.act_window">
+        <field name="name">Upload Package</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">mate_hms_subscriptions.handle.upload.package</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

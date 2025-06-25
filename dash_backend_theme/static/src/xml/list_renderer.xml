@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-inherit="web.ListRenderer" t-inherit-mode="extension">
+
+        <xpath expr="//div[hasclass('o_list_renderer')]" position="attributes">
+            <attribute name='class'>o_list_renderer d-flex flex-column o_renderer table-responsive</attribute>
+        </xpath>
+
+        <xpath expr="//table" position="after">
+            <div t-if="pagerProps and pagerProps.total > 0" class="o_dash_paging mt-auto text-nowrap " role="search">
+                <DashPager t-props="pagerProps" />
+            </div>
+        </xpath>
+    </t>
+</templates>
